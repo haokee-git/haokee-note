@@ -20,6 +20,30 @@
               "icon": "lucide-file",
               "title": "2024.11.23 笔记"
             }
+          },
+          {
+            "id": "b68f5067694a4c9d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "file/2024.11.23 note-2.png"
+              },
+              "icon": "lucide-image",
+              "title": "2024.11.23 note-2"
+            }
+          },
+          {
+            "id": "53c8f3483dbc6845",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "file/2024.11.23 note-1.png"
+              },
+              "icon": "lucide-image",
+              "title": "2024.11.23 note-1"
+            }
           }
         ]
       }
@@ -200,8 +224,10 @@
   },
   "active": "f9d7e701cd100086",
   "lastOpenFiles": [
-    "file/csp2024jhn31.png",
+    "file/2024.11.23 note-2.png",
     "数学笔记/2024.11.23 笔记.md",
+    "file/2024.11.23 note-1.png",
+    "file/csp2024jhn31.png",
     "file/Pasted image 20241126091254.png",
     "file/Pasted image 20241126091249 1.png",
     "file/Pasted image 20241126091249.png",
@@ -220,8 +246,6 @@
     "file/2024.11.15-5.png",
     "file/2024.11.15-4.png",
     "file/Pasted image 20241118150439.png",
-    "file/2024.11.15-3.png",
-    "file/2024.11.15-2.png",
     "数学笔记",
     "渴鹅新闻/2024 十一月/2024.11.4 星期一 - 2024.11.10 星期日.md",
     "file/hhc-fight-wyy.mp4",
