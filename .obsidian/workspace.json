@@ -4,45 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "630d85af1a1325f2",
+        "id": "36509d0353c409cc",
         "type": "tabs",
         "children": [
           {
-            "id": "f9d7e701cd100086",
+            "id": "92baa42c14d657fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数学笔记/2024.11.23 笔记.md",
+                "file": "常用公式证明/圆的面积公式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024.11.23 笔记"
-            }
-          },
-          {
-            "id": "6e91244056894704",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "file/2024.11.23 note-9.png"
-              },
-              "icon": "lucide-image",
-              "title": "2024.11.23 note-9"
-            }
-          },
-          {
-            "id": "cf1e99dc57b7168e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "file/2024.11.23 note-8.png"
-              },
-              "icon": "lucide-image",
-              "title": "2024.11.23 note-8"
+              "title": "圆的面积公式"
             }
           }
         ]
@@ -128,10 +104,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数学笔记/2024.11.23 笔记.md"
+                "file": "常用公式证明/圆的面积公式.md"
               },
               "icon": "lucide-list",
-              "title": "2024.11.23 笔记 的大纲"
+              "title": "圆的面积公式 的大纲"
             }
           },
           {
@@ -224,9 +200,19 @@
   },
   "active": "29709d6aae4385e4",
   "lastOpenFiles": [
+    "未命名 3.md",
+    "常用公式证明/圆的面积公式.md",
+    "未命名 4.md",
+    "file/circles-2.png",
+    "常用公式证明/一元二次方程.md",
+    "file/circles-1.png",
+    "file/circles-1.png",
+    "未命名 2.md",
+    "未命名.md",
+    "file/2024.11.23 note-8.png",
     "file/2024.11.23 note-9.png",
     "数学笔记/2024.11.23 笔记.md",
-    "file/2024.11.23 note-8.png",
+    "未命名 1.md",
     "file/2024.11.23 note-7.png",
     "file/2024.11.23 note-6.png",
     "数学笔记/2024.11.15 笔记.md",
@@ -234,9 +220,6 @@
     "file/2024.11.23 note-5.png",
     "file/Pasted image 20241126100811.png",
     "file/2024.11.23 note-4.png",
-    "file/Pasted image 20241126100814.png",
-    "file/2024.11.23 note-2.png",
-    "file/2024.11.23 note-3.png",
     "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md",
     "渴鹅新闻/2024 十月/2024.10.21 星期一.md",
     "渴鹅新闻/2024 十月/2024.10.22 星期二.md",
@@ -255,12 +238,6 @@
     "比赛记录/2024 十一月/2024.11.17 模拟赛.md",
     "常用公式证明/公式汇总.md",
     "常用公式证明/匀变速直线运动.md",
-    "常用公式证明/幂次法则.md",
-    "未命名.md",
-    "比赛记录/2024 十一月/2024.11.14 题目.md",
-    "常用公式证明/一元二次方程.md",
-    "比赛记录/2024 九月/2024.9.23 模拟赛.md",
-    "比赛记录/2024 十一月/2024.11.14 模拟赛.md",
     "常用公式证明",
     "代码分析",
     "file/Recording 20241110160940.m4a",
