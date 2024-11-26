@@ -1,0 +1,1 @@
+第一次安装该拓展时，VS Code 会弹出窗口询问是否立即重启并切换语言。若在 VS Code 更新之后发现中文退回了英文（拓展未被卸载）的情况，可以按 Ctrl+Shift+P 打开控制面板输入 Configura Display Language，将其切换回中文即可。

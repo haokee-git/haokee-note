@@ -1,0 +1,15 @@
+{
+  "nativeMenus": false,
+  "textFontFamily": "PingFang SC,微软雅黑,Inter",
+  "monospaceFontFamily": "JetBrains Mono,Consolas,Source Code Pro,Monaco,Courier New",
+  "interfaceFontFamily": "PingFang SC,微软雅黑,Inter",
+  "cssTheme": "Border",
+  "baseFontSize": 16,
+  "theme": "moonstone",
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "image",
+    "code",
+    "math"
+  ]
+}
