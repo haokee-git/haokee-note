@@ -22,6 +22,42 @@
             }
           },
           {
+            "id": "aac3386a3033f7bc",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "file/2024.11.23 note-5.png"
+              },
+              "icon": "lucide-image",
+              "title": "2024.11.23 note-5"
+            }
+          },
+          {
+            "id": "e39ae327ea2d82bf",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "file/2024.11.23 note-4.png"
+              },
+              "icon": "lucide-image",
+              "title": "2024.11.23 note-4"
+            }
+          },
+          {
+            "id": "2b6b07875008d19d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "file/2024.11.23 note-3.png"
+              },
+              "icon": "lucide-image",
+              "title": "2024.11.23 note-3"
+            }
+          },
+          {
             "id": "b68f5067694a4c9d",
             "type": "leaf",
             "state": {
@@ -222,15 +258,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f9d7e701cd100086",
+  "active": "29709d6aae4385e4",
   "lastOpenFiles": [
-    "file/2024.11.23 note-2.png",
+    "file/2024.11.23 note-5.png",
     "数学笔记/2024.11.23 笔记.md",
+    "file/2024.11.23 note-4.png",
+    "file/Pasted image 20241126100814.png",
+    "file/Pasted image 20241126100811.png",
+    "file/2024.11.23 note-2.png",
+    "file/2024.11.23 note-3.png",
     "file/2024.11.23 note-1.png",
     "file/csp2024jhn31.png",
     "file/Pasted image 20241126091254.png",
     "file/Pasted image 20241126091249 1.png",
-    "file/Pasted image 20241126091249.png",
     "数学笔记/2024.11.15 笔记.md",
     "数学笔记/数学笔记汇总.md",
     "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md",
@@ -242,10 +282,6 @@
     "渴鹅新闻/2024 十一月/2024.11.11 星期一 - 2024.11.17 星期日.md",
     "主页.md",
     "常用公式证明/匀变加速直线运动.md",
-    "file/2024.11.15-6.png",
-    "file/2024.11.15-5.png",
-    "file/2024.11.15-4.png",
-    "file/Pasted image 20241118150439.png",
     "数学笔记",
     "渴鹅新闻/2024 十一月/2024.11.4 星期一 - 2024.11.10 星期日.md",
     "file/hhc-fight-wyy.mp4",
