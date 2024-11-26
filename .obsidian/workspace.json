@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "6e91244056894704",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "file/2024.11.23 note-9.png"
+              },
+              "icon": "lucide-image",
+              "title": "2024.11.23 note-9"
+            }
+          },
+          {
             "id": "cf1e99dc57b7168e",
             "type": "leaf",
             "state": {
@@ -212,8 +224,9 @@
   },
   "active": "29709d6aae4385e4",
   "lastOpenFiles": [
-    "file/2024.11.23 note-8.png",
+    "file/2024.11.23 note-9.png",
     "数学笔记/2024.11.23 笔记.md",
+    "file/2024.11.23 note-8.png",
     "file/2024.11.23 note-7.png",
     "file/2024.11.23 note-6.png",
     "数学笔记/2024.11.15 笔记.md",
@@ -224,7 +237,6 @@
     "file/Pasted image 20241126100814.png",
     "file/2024.11.23 note-2.png",
     "file/2024.11.23 note-3.png",
-    "file/2024.11.23 note-1.png",
     "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md",
     "渴鹅新闻/2024 十月/2024.10.21 星期一.md",
     "渴鹅新闻/2024 十月/2024.10.22 星期二.md",
