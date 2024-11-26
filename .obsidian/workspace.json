@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "75344f27a88b9776",
+        "id": "1abaad0feca11306",
         "type": "tabs",
         "children": [
           {
-            "id": "93a12a98675b85f8",
+            "id": "bcb5c51bb3f71e88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "渴鹅新闻/2024 十月/2024.10.21 星期一.md",
+                "file": "数学笔记/2024.11.15 笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024.10.21 星期一"
+              "title": "2024.11.15 笔记"
             }
           },
           {
-            "id": "f801ea952963ecee",
+            "id": "161d0e80da26f453",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md",
+                "file": "数学笔记/2024.11.23 笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024.11.18 星期一 - 2024.11.24 星期日"
+              "title": "2024.11.23 笔记"
             }
           }
         ],
@@ -108,10 +108,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md"
+                "file": "数学笔记/2024.11.23 笔记.md"
               },
               "icon": "lucide-list",
-              "title": "2024.11.18 星期一 - 2024.11.24 星期日 的大纲"
+              "title": "2024.11.23 笔记 的大纲"
             }
           },
           {
@@ -173,12 +173,23 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "6ddaf75184ea1c5b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,22 +209,24 @@
       "obsidian-projects:打开项目": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "vscode-editor:新建代码文件": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f801ea952963ecee",
+  "active": "6ddaf75184ea1c5b",
   "lastOpenFiles": [
+    "数学笔记/2024.11.23 笔记.md",
+    "数学笔记/2024.11.15 笔记.md",
+    "数学笔记/数学笔记汇总.md",
+    "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md",
     "渴鹅新闻/2024 十月/2024.10.21 星期一.md",
     "渴鹅新闻/2024 十月/2024.10.22 星期二.md",
     "渴鹅新闻/2024 十月/2024.10.23 星期三.md",
     "渴鹅新闻/2024 十月/2024.10.24 星期四.md",
-    "渴鹅新闻/2024 十一月/2024.11.18 星期一 - 2024.11.24 星期日.md",
     "渴鹅新闻/新闻列表.md",
     "渴鹅新闻/2024 十一月/2024.11.11 星期一 - 2024.11.17 星期日.md",
     "主页.md",
-    "数学笔记/数学笔记汇总.md",
     "常用公式证明/匀变加速直线运动.md",
-    "数学笔记/2024.11.15 笔记.md",
     "file/2024.11.15-6.png",
     "file/2024.11.15-5.png",
     "file/2024.11.15-4.png",
@@ -240,7 +253,6 @@
     "比赛记录/2024 九月/2024.9.23 模拟赛.md",
     "比赛记录/2024 十一月/2024.11.14 模拟赛.md",
     "未命名 1.md",
-    "STL/STL 简介.md",
     "常用公式证明",
     "代码分析",
     "file/Recording 20241110160940.m4a",
