@@ -11,10 +11,14 @@
             "id": "f9d7e701cd100086",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "数学笔记/2024.11.23 笔记.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2024.11.23 笔记"
             }
           }
         ]
@@ -88,9 +92,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "数学笔记/2024.11.23 笔记.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "2024.11.23 笔记 的大纲"
             }
           },
           {
