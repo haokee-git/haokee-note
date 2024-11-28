@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 code {
-    font-family: "JetBrains Mono", "Manaco", "Menlo", "Consolas", "PingFang SC" !important;
+    font-family: "Maple Mono", "JetBrains Mono", "Manaco", "Menlo", "Consolas", "PingFang SC" !important;
     color: var(--color-blue) !important;
 }
 

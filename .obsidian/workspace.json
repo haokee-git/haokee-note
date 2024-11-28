@@ -11,14 +11,12 @@
             "id": "92baa42c14d657fc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "vscode-editor",
               "state": {
-                "file": "常用公式证明/圆的面积公式.md",
-                "mode": "source",
-                "source": false
+                "file": "publish.css"
               },
               "icon": "lucide-file",
-              "title": "圆的面积公式"
+              "title": "publish"
             }
           }
         ]
@@ -104,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "常用公式证明/圆的面积公式.md"
+                "file": "publish.css"
               },
               "icon": "lucide-list",
-              "title": "圆的面积公式 的大纲"
+              "title": "publish 的大纲"
             }
           },
           {
@@ -200,8 +198,10 @@
   },
   "active": "29709d6aae4385e4",
   "lastOpenFiles": [
-    "未命名 3.md",
+    "常用公式证明/幂次法则.md",
+    "常用公式证明/公式汇总.md",
     "常用公式证明/圆的面积公式.md",
+    "未命名 3.md",
     "未命名 4.md",
     "file/circles-2.png",
     "常用公式证明/一元二次方程.md",
@@ -236,8 +236,6 @@
     "比赛记录/2024 十一月/2024.11.17 题目.md",
     "题目/题目标签.md",
     "比赛记录/2024 十一月/2024.11.17 模拟赛.md",
-    "常用公式证明/公式汇总.md",
-    "常用公式证明/匀变速直线运动.md",
     "常用公式证明",
     "代码分析",
     "file/Recording 20241110160940.m4a",
