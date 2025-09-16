@@ -168,8 +168,19 @@
               "icon": "message-square",
               "title": "Copilot"
             }
+          },
+          {
+            "id": "dbf46c5f6a17d227",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -195,13 +206,15 @@
       "vscode-editor:新建代码文件": false,
       "webpage-html-export:Export Vault to HTML": false,
       "ai_llm:Local LLM Chat": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3eca2b0cbfb09d25",
+  "active": "146b26d5103e8682",
   "lastOpenFiles": [
-    "publish.js",
     "思维链与算法思路.md",
+    "隐藏的内容/来追梦 4 月 25 日考试总结.md",
+    "publish.js",
     "file/Checkboxes.png",
     "比赛记录/2025 七月/2025.7.30 模拟赛.md",
     "比赛记录/2025 七月/2025.7.27 模拟赛.md",
@@ -221,7 +234,6 @@
     "比赛记录/2025 八月/2025.8.4 模拟赛.md",
     "比赛记录/2025 八月/2025.8.2 模拟赛.md",
     "比赛记录/2025 八月",
-    "隐藏的内容/来追梦 4 月 25 日考试总结.md",
     "隐藏的内容",
     "常用公式证明/一元二次方程.md",
     "杂项/乱数假文/繁体中文.md",
@@ -245,7 +257,6 @@
     "file/Pasted image 20250313164636.png",
     "教程/个人博客",
     "教程",
-    "publish.css",
     "未命名.canvas",
     "fdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsa.canvas"
   ]
