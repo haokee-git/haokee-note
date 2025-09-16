@@ -1,0 +1,20 @@
+{
+  "showRibbon": true,
+  "showLineNumber": false,
+  "promptDelete": false,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "tabSize": 2,
+  "livePreview": true,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "root",
+  "attachmentFolderPath": "file",
+  "propertiesInDocument": "visible",
+  "vimMode": false,
+  "useTab": false,
+  "foldHeading": true,
+  "rightToLeft": false,
+  "spellcheck": false,
+  "showUnsupportedFiles": true
+}
