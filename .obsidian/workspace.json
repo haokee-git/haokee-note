@@ -4,33 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "30fdbe88de55c899",
+        "id": "7e50d2ccb589b59a",
         "type": "tabs",
         "children": [
           {
-            "id": "f0d825ac4053b9bd",
+            "id": "bf8ade8f0560ce31",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "题目/题目标签.md",
-                "mode": "source",
-                "source": false
+                "aFile": "比赛记录/2025 九月/2025.9.15 模拟赛.md",
+                "bFile": "比赛记录/2025 九月/2025.9.15 模拟赛.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "题目标签"
-            }
-          },
-          {
-            "id": "e11e7ea4b9d6593f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "file/Checkboxes.png"
-              },
-              "icon": "lucide-image",
-              "title": "Checkboxes"
+              "icon": "diff",
+              "title": "Diff: 2025.9.15 模拟赛"
             }
           }
         ]
@@ -106,13 +94,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "题目/题目标签.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "题目标签 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -223,18 +210,20 @@
       "fogsong-typsidian:Open menu": false
     }
   },
-  "active": "f0d825ac4053b9bd",
+  "active": "bf8ade8f0560ce31",
   "lastOpenFiles": [
+    "比赛记录/2025 九月/2025.9.13 模拟赛.md",
+    "比赛记录/2025 九月/2025.9.15 模拟赛.md",
+    "比赛记录/2025 九月/2025.9.16 模拟赛.md",
+    "比赛记录/2025 九月/2025.9.18 模拟赛.md",
+    "题目/题目标签.md",
     "主页.md",
     "publish_optimized.css",
     "publish_tmp.css",
-    "题目/题目标签.md",
     "比赛记录/2025 九月/2025.9.22 模拟赛.md",
     "file/Checkboxes.png",
-    "比赛记录/2025 九月/2025.9.18 模拟赛.md",
     "file/幂次法则：C.png",
     "file/{66895574-0511-4839-8735-C5FC9497C55E}.png",
-    "比赛记录/2025 九月/2025.9.16 模拟赛.md",
     "隐藏的内容/来追梦 4 月 25 日考试总结.md",
     "思维链与算法思路.md",
     "publish.js",
@@ -243,12 +232,10 @@
     "比赛记录/2025 七月/2025.7.25 模拟赛.md",
     "比赛记录/2025 七月/2025.7.22 模拟赛.md",
     "比赛记录/2025 七月",
-    "比赛记录/2025 九月/2025.9.15 模拟赛.md",
     "比赛记录/2025 九月/2025.9.9 模拟赛.md",
     "比赛记录/2025 九月/2025.9.4 模拟赛.md",
     "比赛记录/2025 九月/2025.9.6 模拟赛.md",
     "比赛记录/2025 九月/2025.9.11 模拟赛.md",
-    "比赛记录/2025 九月/2025.9.13 模拟赛.md",
     "比赛记录/2025 九月/2025.9.2 模拟赛.md",
     "比赛记录/2025 九月",
     "比赛记录/2025 八月/2025.8.7 模拟赛.md",
