@@ -47,8 +47,7 @@
               "title": "Checkboxes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,13 +120,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "比赛记录/2025 九月/2025.9.22 模拟赛.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "题目标签 的大纲"
+              "title": "2025.9.22 模拟赛 的大纲"
             }
           },
           {
@@ -136,12 +135,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "比赛记录/2025 九月/2025.9.22 模拟赛.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "题目标签 的出链列表"
+              "title": "2025.9.22 模拟赛 的出链列表"
             }
           },
           {
@@ -150,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "比赛记录/2025 九月/2025.9.22 模拟赛.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "题目标签 的反向链接列表"
+              "title": "2025.9.22 模拟赛 的反向链接列表"
             }
           },
           {
@@ -237,10 +236,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f0d825ac4053b9bd",
+  "active": "fbdf65e12b4fb8e1",
   "lastOpenFiles": [
-    "比赛记录/2025 九月/2025.9.22 模拟赛.md",
     "题目/题目标签.md",
+    "比赛记录/2025 九月/2025.9.22 模拟赛.md",
     "file/Checkboxes.png",
     "比赛记录/2025 九月/2025.9.18 模拟赛.md",
     "file/幂次法则：C.png",
