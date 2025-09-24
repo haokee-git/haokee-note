@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "235802c5adc1d39f",
+        "id": "4d9af42e8009cf64",
         "type": "tabs",
         "children": [
           {
-            "id": "b5e9b772c772cfe7",
+            "id": "4cde635d85b63306",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "主页.md",
-                "bFile": "主页.md",
-                "aRef": ""
+                "file": "主页.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 主页"
+              "icon": "lucide-file",
+              "title": "主页"
             }
           }
         ]
@@ -94,12 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "主页.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "主页 的大纲"
             }
           },
           {
@@ -209,7 +210,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5e9b772c772cfe7",
+  "active": "4cde635d85b63306",
   "lastOpenFiles": [
     "主页.md",
     "比赛记录/2025 九月/2024.9.23 模拟赛.md",
