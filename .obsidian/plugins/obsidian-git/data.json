@@ -1,17 +1,26 @@
 {
   "commitMessage": "vault backup: {{date}}",
+<<<<<<< HEAD
   "autoCommitMessage": "vault backup: {{date}}",
   "commitMessageScript": "",
+=======
+>>>>>>> bfa4850fc59b4e381b47bef8dc1b4f671323350a
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": false,
+<<<<<<< HEAD
   "autoCommitOnlyStaged": false,
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
   "showErrorNotices": true,
+=======
+  "disablePush": false,
+  "pullBeforePush": true,
+  "disablePopups": false,
+>>>>>>> bfa4850fc59b4e381b47bef8dc1b4f671323350a
   "disablePopupsForNoChanges": false,
   "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
@@ -19,7 +28,11 @@
   "syncMethod": "merge",
   "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": false,
+<<<<<<< HEAD
   "treeStructure": true,
+=======
+  "treeStructure": false,
+>>>>>>> bfa4850fc59b4e381b47bef8dc1b4f671323350a
   "refreshSourceControl": true,
   "basePath": "",
   "differentIntervalCommitAndPush": false,
@@ -33,7 +46,10 @@
   "showFileMenu": true,
   "authorInHistoryView": "hide",
   "dateInHistoryView": false,
+<<<<<<< HEAD
   "diffStyle": "split",
+=======
+>>>>>>> bfa4850fc59b4e381b47bef8dc1b4f671323350a
   "lineAuthor": {
     "show": false,
     "followMovement": "inactive",
@@ -55,8 +71,14 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
+<<<<<<< HEAD
     "gutterSpacingFallbackLength": 5,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   }
+=======
+    "gutterSpacingFallbackLength": 5
+  },
+  "autoCommitMessage": "vault backup: {{date}}"
+>>>>>>> bfa4850fc59b4e381b47bef8dc1b4f671323350a
 }

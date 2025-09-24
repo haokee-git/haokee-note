@@ -1,0 +1,178 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[渴鹅笔记]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>渴鹅笔记</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 25 Sep 2024 05:44:19 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 25 Sep 2024 05:44:19 GMT</pubDate><copyright><![CDATA[好渴鹅]]></copyright><ttl>60</ttl><dc:creator>好渴鹅</dc:creator><item><title><![CDATA[2024.9.23 模拟赛]]></title><description><![CDATA[ 
+ <br>题目链接：<a data-href="2024.9.23 题目" href="比赛记录\2024.9.23-题目.html" class="internal-link" target="_self" rel="noopener">2024.9.23 题目</a><br><br>有  个数，现在有两个人在轮流选数，无数可选或选了之后选择的数的和为  的倍数的人输，两人都使用最佳策略，问你哪个人能赢。<br><br>首先，这道题里面的  起到的是交换双方的作用，也就是说，这一步我不出等同于下一步你出的就是我出的，因此当  的数量为偶数时，它完全没有作用；只有当  的数量为偶数时，它才会交换双方。<br>其次，由于两个人都会按照最优方式取数，因此我们只需要思考它们最多能够持续多久。经过「短暂」的思考后，我们可以想到，一共两种方式： 或者是 。因此答案就显而易见了，我们只需要求出最后一个出牌的人是谁，那个人就是胜者。时间复杂度 。<br><br>给定 ，令  等于最小的  满足 。对于长度为  的  个排列 ，求 。<br><br>我们枚举  的答案为 ，那么  必须  且对于任意  必须 。我们枚举  使得 ，令 ，然后考虑前  个数又多少种选择。<br>由于我们已经在位置  填上了 ，因此位置  可以选择  个数，位置  也能选择  个数（有一个数被  占了）。一直到位置 ，这是我们突然发现不能选已经被选过的  了，因此它和它前面的数都只能选  个。因此，前  个数的方案数为：<br><br>此时答案已经于  没有关系了，因此我们可以只枚举 。接下来我们枚举 ，通过简化，我们可以得到最终的和为：<br><br>由于题目当中要求我们求期望，并且我们没有考虑答案为  的特殊情况，因此我们需要将这个和加上  之后除以 。另外，题目当中要进行有理数取余，可以使用快速幂法求得。时间复杂度为 （ 为模数）。<br><br>令 ，对于任意一个正整数 ，可以将其分解成唯一的  的形式，设 ，给你  组数据，每组数据为  的形式，求 。<br><br>首先，对于一个数 ，我们需要考虑对它的分解。经过好渴鹅的深思熟虑，可以发现令最大的  使得 ，那么  的分解里面必定会有 。<br>现在我们需要求 。通过差分，可以将其转化为 。我们可以使用一个函数  来求这个数。我们知道，两个相同的数进行异或，结果为 ；而  跟任意数异或结果就是那个数。因此对于 ，我们同样找到一个最大的  使得 ，然后此时会有  这  个数会取到 ，我们只需要判断一下奇偶性就行了（奇数时额外异或 ）。然后对于这些可以取到  的数，它们通通减掉了 ，因此答案需要异或上 。其它没有取到  的数，需要继续进行计算，因此答案需要异或上 。<br>也可以直接求  的和，但是代码会复杂一点，思路几乎一样。<br>由于斐波那契数列的第  项是最大的小于  的数，因此令 ，该算法的时间复杂度为 。<br><br>有  种纸币，每种纸币无数张，最大面额不超过 ，第  种纸币面额为 ，现求一最大值 ，使得无法使用这  种纸币拼凑出 。<br><br>好渴鹅不会这道题目，所以使用的是完全背包来找最小值（正解是同余最短路）。鹅的目标是骗够  分，因此时间复杂度为  的完全背包中的  最大可以到达 ，也就是可以输出的答案最多是这个数。<br>令  设为能否凑出  的金额，那么对于任意的 ，我们可以使用  的金额来不足，即 。最后找到最大的 ，使得 ，输出这个  就行了。<br>炸裂的是，这个原本应该  分的代码最后得了  分。<br><br>
+<br>排名：；
+<br>比赛分数：；
+<br>情况：超预期；
+<br>问题：不会同余最短路。
+]]></description><link>比赛记录\2024.9.23-模拟赛.html</link><guid isPermaLink="false">比赛记录/2024.9.23 模拟赛.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 06:10:13 GMT</pubDate></item><item><title><![CDATA[2024.9.23 题目]]></title><description><![CDATA[ 
+ <br>题解：<a data-href="2024.9.23 模拟赛" href="比赛记录\2024.9.23-模拟赛.html" class="internal-link" target="_self" rel="noopener">2024.9.23 模拟赛</a><br><br>有  个数，现在有两个人在轮流选数，无数可选或选了之后选择的数的和为  的倍数的人输，两人都使用最佳策略，问你哪个人能赢。<br><br>给定 ，令  等于最小的  满足 。对于长度为  的  个排列 ，求 。<br><br>令 ，对于任意一个正整数 ，可以将其分解成唯一的  的形式，设 ，给你  组数据，每组数据为  的形式，求 。<br><br>有  种纸币，每种纸币无数张，最大面额不超过 ，第  种纸币面额为 ，现求一最大值 ，使得无法使用这  种纸币拼凑出 。]]></description><link>比赛记录\2024.9.23-题目.html</link><guid isPermaLink="false">比赛记录/2024.9.23 题目.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:11:19 GMT</pubDate></item><item><title><![CDATA[2024.9.24 模拟赛]]></title><description><![CDATA[ 
+ <br><a data-href="2024.9.24 题目" href="比赛记录\2024.9.24-题目.html" class="internal-link" target="_self" rel="noopener">2024.9.24 题目</a><br><br>给定正整数 ，有集合 ，对于  的子集 ，计算 ，对  取模。<br><br>首先，这道题我们自然不能从选择的方案入手，因为枚举选择的方案数量会达到  这个量级，而 ，因此我们可以从子集的和入手，因为不同的子集可能会有同样的和，而和的数量也仅仅只有 。<br>令  表示为已经选了  中的若干个数，和为  的方案数量。我们枚举 ，则对于任意的 ，不管它是怎么达到  的和的，我们都可以把所有达到  的和的子集加入一个元素 ，便是 ，或者写成  。可以使用压数组+倒序枚举  的方式将其压至一维。<br>现在我们已经知道任选若干个元素，和为  的方案数了，我们需要将其乘起来，因此枚举 ，我们每次将答案乘上  ，因为有  种方案和为 。注意取模（ 数组的取模需要摸 ，因为费马小定理）。时间复杂度为 。<br><br>有  栋楼，编号 ，每栋楼  个空房间，每房间住一人。对于喜好为  的租客，它只能住在编号为  的楼中。现有  次询问，询问为  的形式，表示来了  个喜好为  的租客， 为负代表租客离开。每次询问你要回答是否能住下所有租客。<br><br>由于答案只会有有解、无解的情况，因此我们考虑判断无解。对于任意一段租户 ，如果它们的总人数大于  时，便有人住不到房间，就是无解的情况。对其作差，得到不等式 。因此，我们可以搞出一个序列 ，只需要维护  的最大字段和，询问的时候看一下是否大于  即可。<br>维护最大字段和的数据结构可以选可爱的线段树。由于只有单点修改，不需要打懒标记，甚至都不需要写区间查询，只需要访问  就行了。最重要的是要开  倍。<br><br>有一棵根为  的树，点的编号为 ，第  个点的权值为 ，dfs 序为 。你需要在树上找到权值和最大的联通块，满足  个  的性质： 若同时存在于连通快内， 与  不能相邻。输出最大和。<br><br>暴力思路：枚举所有顶点选择的可能，判断一下是否在一个联通块内（使用并查集），然后判断 dfs 序是否相邻，如果都满足条件就可以直接加起来取最值了。时间复杂度 ，成功骗到  分。<br><br>有  的棋盘，每一个格子里最初的形式为  或 。 表示该格子没有棋子， 反之， 表示不知道。一个棋子可以跳过它旁边的棋子，到它旁边的棋子的下一个位置，仅当那个位置没有棋子。对于所有可能的开局，你可以操作若干包括  步，问你每一种开局下面结束状态的数量，的和。<br><br>对于每一个  的方格，我们枚举所有的可能性，然后使用记忆化搜索搜出所有可能的结束状态（用状态压缩将  序列压缩到整数内），所有加起来即可。时间复杂度 。成功骗到  分。<br><br>
+<br>排名：；
+<br>比赛分数：；
+<br>情况：相比与 <a data-href="2024.9.23 模拟赛" href="比赛记录\2024.9.23-模拟赛.html" class="internal-link" target="_self" rel="noopener">2024.9.23 模拟赛</a>，较好；
+<br>问题：树形 dp、序列 dp 能力较差。
+]]></description><link>比赛记录\2024.9.24-模拟赛.html</link><guid isPermaLink="false">比赛记录/2024.9.24 模拟赛.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 06:13:15 GMT</pubDate></item><item><title><![CDATA[2024.9.24 题目]]></title><description><![CDATA[ 
+ <br>题解：<a data-href="2024.9.24 模拟赛" href="比赛记录\2024.9.24-模拟赛.html" class="internal-link" target="_self" rel="noopener">2024.9.24 模拟赛</a><br><br>给定正整数 ，有集合 ，对于  的子集 ，计算 ，对  取模。<br><br>有  栋楼，编号 ，每栋楼  个空房间，每房间住一人。对于喜好为  的租客，它只能住在编号为  的楼中。现有  次询问，询问为  的形式，表示来了  个喜好为  的租客， 为负代表租客离开。每次询问你要回答是否能住下所有租客。<br><br>有一棵根为  的树，点的编号为 ，第  个点的权值为 ，dfs 序为 。你需要在树上找到权值和最大的联通块，满足  个  的性质： 若同时存在于连通快内， 与  不能相邻。输出最大和。<br><br>有  的棋盘，每一个格子里最初的形式为  或 。 表示该格子没有棋子， 反之， 表示不知道。一个棋子可以跳过它旁边的棋子，到它旁边的棋子的下一个位置，仅当那个位置没有棋子。对于所有可能的开局，你可以操作若干包括  步，问你每一种开局下面结束状态的数量，的和。]]></description><link>比赛记录\2024.9.24-题目.html</link><guid isPermaLink="false">比赛记录/2024.9.24 题目.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:11:43 GMT</pubDate></item><item><title><![CDATA[2024.9.25 模拟赛]]></title><description><![CDATA[ 
+ <br>题目：<a data-href="2024.9.25 题目" href="比赛记录\2024.9.25-题目.html" class="internal-link" target="_self" rel="noopener">2024.9.25 题目</a><br><br>对于数组 ，若有点   满足  且 ，称点  为山谷。至多可以修改  次数组，使指定位置上的数变得比原来小。求最大山谷点之和。<br><br>首先，我们发现两个山谷不可能挨在一起，因此两个手动创建的山谷必须要隔至少一座山。由于 ，不难想到 dp。首先选择了前多少个需要保留，已经修改了多少次也需要保留，但是跟之前修改的方案没有太大关系，只需要记录最后一个是否紧挨着就行，因此可以设计出状态  表示为已经选择了前  座山，修改了  次，最后一座山是否在  那里。<br>接下来考虑状态的转移。若第  座山已经形成了山谷，我们就可以直接使用，因此 ；如果第  座山没有形成山谷，我们就可以手动创建一个山谷，高度为 ，也就是 。同时， 也可以不要山谷，即 。<br>最后  数组的所有值当中的最大值就是答案了。]]></description><link>比赛记录\2024.9.25-模拟赛.html</link><guid isPermaLink="false">比赛记录/2024.9.25 模拟赛.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:24:29 GMT</pubDate></item><item><title><![CDATA[2024.9.25 题目]]></title><description><![CDATA[ 
+ <br>题解：<a data-href="2024.9.25 题目" href="比赛记录\2024.9.25-题目.html" class="internal-link" target="_self" rel="noopener">2024.9.25 题目</a><br><br>对于数组 ，若有点   满足  且 ，称点  为山谷。至多可以修改  次数组，使指定位置上的数变得比原来小。求最大山谷点之和。<br><br>有一长度为  的数组 ，会变换  次，每一次变换逻辑如下：<br>
+<br>若  为偶数，则  ，数组长度 ；
+<br>若  为奇数，则  ，数组长度 。
+<br>最后  只剩一个数字，输出该数字对  取模的结果。<br><br>你参加擂台赛，包括你有  个选手参加，所有选手的实力为  中不重复的数，你的实力为 。比赛规则的相邻两个人比赛，实力强的胜，胜者晋级下一轮，直到只剩一名冠军。你可以规定初始的排列顺序，并买通了  名选手，这  名选手会在比赛时输给你。你必须满足自己战胜的选手的实力的最长上升子序列的长度不小于 。请问有多少种初始排列可以让你在满足条件的情况下获得冠军？<br><br>提示
+该题目为原题面。
+<br>鸡尾酒和智乃在玩一个扑克牌游戏 游戏规则是这样的： 从一幅扑克牌（不含大小王，共  张）中，随机发  张牌到每个玩家手上，然后，每个玩家可以任意想象自己抽到了这幅扑克牌中的另外两张牌在手，与自己手上的  张牌组成恰好  张，以构成一幅“最大”的手牌。 两幅手牌比较大小的规则是这样的（从大到小）：<br><img alt="problem_poker_image.png" src="lib\media\problem_poker_image.png"><br>其中，顺子不能向上越过 A，或向下越过 2。如果两人的牌型是一致的，那么，按照关键牌组从大到小去比较，例如，两人分别是：♥A ♠A ♠3 ♦3 ♣9 | ♠K ♥K ♣3 ♥3 ♠10，则第一个人胜，因为一对 A &gt; 一对 K。在这个游戏中，A&gt;K&gt;Q&gt;...&gt;2。<br>对于同点数，不同花色的牌，在游戏中视作一样大小的牌，但在输出中，黑桃 &gt; 红桃 &gt; 梅花 &gt; 方块。<br><br>鸡尾酒为了赢这个游戏，买了一副透视眼镜，可以看到智乃的底牌。 为了羞辱智乃，鸡尾酒决定，每次都想象出两张刚刚好可以稳赢智乃的牌，请帮 助鸡尾酒计算，想象出的那两张牌分别应该是什么，或者告诉鸡尾酒，他无法获胜。]]></description><link>比赛记录\2024.9.25-题目.html</link><guid isPermaLink="false">比赛记录/2024.9.25 题目.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:11:53 GMT</pubDate><enclosure url="lib\media\problem_poker_image.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\problem_poker_image.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[交通建设]]></title><description><![CDATA[ 
+ <br>摘要
+本教程适用于城市天际线（City: Skyline 或 Ciky: Skyline II），对于现实可能不具备指导性质，可能可以帮助你的城市解决一定的拥堵问题。
+<br><br>分流
+一条车道的车流分成两个方向行驶交通行为，称为分流。
+<br>对于匝道的分流，需要注意一下几点：<br>
+<br>基础的，分出去的匝道总车道数一定要大于等于原先道路，不然会产生合流，使道路通行变慢；
+<br>如果是主路分出去一个道，主路还要继续延续的话，不要将匝道分出去的一个道减到主路上面；
+<br>分流处尽量不放置转弯，转弯半径过小可能会出现通行速度缓慢地情况；
+<br>对于  汇出  车道的情况，不要直接汇出两车道，匝道左车道会与主路最右车道产生车流交汇。较好的方式是先汇出一个道后再拓充至两个车道；
+<br>对于有条件的路口，例如  时，如果想要直接分出两条匝道并且不产生车流交汇，可以在匝道口前方的道路右侧额外变宽  或  个车道，这样即可避免车流交汇。
+<br><br>合流
+两条基本平行的同向车流汇合在一条车道上行驶的交通行为，称为合流。
+<br>对于匝道的合流，需要注意的点：<br>
+<br>合流后的车道数量不宜小于合流匝道的车道最大值；
+<br>对于有较大车流的合流口，可以将车道数量加到所有合流匝道的车道数的和；
+<br>合流口不宜与下一个汇流口间隔过近，以免产生严重车流交汇。对于有该需求的互通（如标准苜蓿叶式立交），可以从主路引出一条单独的交汇车道，以免影响主路的形式；
+<br>夹角（小于 ）越小越好，可以加快车流速度；
+<br>匝道连上主路的合流口可以暂时将匝道的车道加到主路上并辅以实线，以让汇入主路的右侧车辆观察并预估合适变道时机。
+<br><br>在修建道路时，要基本遵守以下原则：<br>
+<br>转弯：道路转弯在正常情况下不宜过大。若确实有该需求，应降低最高限速；
+<br>坡度：道路的坡度应处于适中水平，不宜过大或过小。普遍来说，下坡处的坡度可以略高于上坡。可以通过增长路程的方式延缓坡度；
+<br>划线：道路的划线是必须的，它限制了车辆的行驶路径。较特别的是实线，一般车辆不允许压实线变道。在分流、合流处规划实现可以使车辆行驶得更加有秩序，从而提高通行效率。
+<br>导流线：导流线是一块用实线围城的区域，用倾斜的实线填充，一般出现在分流、合流处，车辆一般不能压这块区域，便于在压线提醒车辆；
+<br><br>在道路的建造中，我们不可避免的需要建造转换通行道路的路口。以下为常见的三向路口及优缺点：<br>
+<br>普通三向路口：占地小，通行能力较一般，需要等红灯；
+<br>渠化三向路口：占地较小，通行能力较一般，右转可以不用等灯；
+<br>跨线桥/下穿隧道：占地一般，通行能力较好；
+<br>环岛：占地一般，通行能力较差（车流较少除外），车多会出现死锁情况；
+<br>喇叭形立交：占地特大，通行能力好；
+<br>层叠式/T 型立交：占地较大，通行能力极好，造价高。
+<br>常见的四向路口：<br>
+<br>普通三向路口：占地小，通行能力较差，需要等红灯；
+<br>渠化三项路口：占地小，通行能力较差，右转可以不用等灯；
+<br>环岛：占地一般，通行能力特差；
+<br>单跨线桥/下穿隧道：占地较小，通行能力一般；
+<br>双跨线桥/下穿隧道：占地一般，通行能力较好；
+<br>跨线桥+环岛：占地一般，通行能力较差；
+<br>移位左转：占地较大，通行能力一般，造价低，不适合四面车流量都很多的路口；
+<br>杠铃式立交：占地一般，通行能力一般，适合上下高速口；
+<br>菱形立交：占地一般，通行能力一般，适合上下高速口。
+<br>苜蓿叶式立交：占地特大，通行能力较好，会出现车流交汇，造价低；
+<br>无交互式苜蓿叶式立交：占地特大，通行能力好，造价一般；
+<br>层叠式立交：占地一般，通行能力好，造价高；
+<br>半苜蓿叶式立交：占地较大，通行能力好，造价一般，适合夹角较小的路口；
+<br>涡轮立交：占地较大，通行能力特别好，造价高；
+<br>分体式（双喇叭/T 型）立交：占地特大，通行能力特别好，造价较低，适合收费站。
+<br>总结：车多不要用环岛。<br><br><br>高架快速路是中国独有的特色，约等于主干道的每一个路口都架起跨线桥。以下为常见高架的形式：<br>
+<br>全覆盖型：高架路在上方全覆盖地面路，需要使用空心桥墩；
+<br>中间型：地面路中间留空给高架路；
+<br>两侧型：地面路的两边留出空位架设桥墩。
+<br>在生活中，普遍采用的是第一种或第二种，第二种应用最广泛，其匝道不需要在地面路上侧方额外扩充车道留给匝道，较为美观。<br><br>高架路不可避免地要在于主路之间建好连接口，连接的桥梁便是匝道。匝道口之间的距离不宜过近，起码留出  米，否则高架路上右侧车道将出现严重车流交汇，使通行能力降低。匝道口距离也不宜太远，会出现匝道口车流过多的情况。<br><br>城市基本都需要于外界其它城市进行联络、运输。运输的方式一般有：公路、铁路、水路、空中等，其中公路自然是使用最为广泛的一种。<br>城市与城市之间的公路一般都修成高速，少数为国道、乡道。高速公路也可以修成室内连接的形式，即绕城高速/穿城高速，这类高速普遍车流量大，需要较多的上下口分散车流。市外高速则可以少修建上下口，或于绕城高速/穿城高速做连接处理。<br>水路对于大多数内陆城市无法使用，其次于公路的是铁路。铁路也分客运/货运，一般客运站修建在城市偏郊区大块平地上，因其噪音污染较高。若有较高客运量，可以考虑在旁边主干道修建高架。货运站可以远离市区，修建在城市的工业区位置，以免大多货车进入城区影响交通。<br>空运的噪音污染特别高，且需要大块平地，需要修建在离城市数十公里的地方，使用机场高速进行连接，也可以连上市外高速。机场旁边尽量不要建设住宅区，不要把机场建在离高山较近的地方。<br><br>没有模组/资产的城市天际线是没有灵魂的。下面列出了常用的建造道路的模组/资产，可以根据喜好自定订阅：<br><br>
+<br>Extended Network：拓展道路资产，给予玩家更多选择；
+<br>MSE 道路拓展：主要是拓展高速公路，使其更加中式；
+<br>CSUR：最大的中式道路模组，使用按道修建的理念，适合有追求的玩家；
+<br>Move It：移动任意物品，可以对立交进行微调；
+<br>TMPE：包含了各种路口工具（红绿灯、限速等），但是主要是使用它的道路划线工具，可以防止刁民乱变道。
+<br><br>注意
+城市天际线 II 抛弃了传统的模组平台 Steam 创意工坊，使用了自带的 Paradox Mods 模组商店（这个模组商店很早就开始运行了，只是知名度不高）。（这不代表游戏不在 Steam 上售卖）
+<br>
+<br>Road Builder：类似于 CSUR，但是是建立在原版道路模式基础上的，需要使用原版道路为蓝图，目前处于测试阶段；
+<br>Traffic：道路划线工具，比 CSUR 功能少一点；
+<br>原版道路：城市天际线 II 的原版道路就很不错了，可以做到类似 CSUR 的效果，不喜欢折腾的可以直接使用原版道路；
+<br>Move It：移动任意物品，可以对立交进行微调；
+<br>CSUR：官方说要制作，目前还没有发布。
+]]></description><link>城市天际线\交通建设.html</link><guid isPermaLink="false">城市天际线/交通建设.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:48:24 GMT</pubDate></item><item><title><![CDATA[Modern C++ 库]]></title><description><![CDATA[ 
+ <br><a data-tooltip-position="top" aria-label="https://git.rbtr.ee/haokee/ModernCpp" rel="noopener" class="external-link" href="https://git.rbtr.ee/haokee/ModernCpp" target="_blank">link</a><br>此库可以让你的 C++ 代码风格更接近其他现代编程语言的代码风 格，并手写了 C++ 23 下大多数人还不能使用的 print 系列函数（目前只支持最基本的占位符）。<br><br>在&nbsp;<a data-tooltip-position="top" aria-label="https://git.rbtr.ee/haokee/ModernCpp/releases" rel="noopener" class="external-link" href="https://git.rbtr.ee/haokee/ModernCpp/releases" target="_blank">版本发布 - ModernCpp</a>&nbsp;下下载最新的 ModernCpp.zip（或其它格式的压缩包）文件，然后跟你的源代码目录放在同一个文件夹下（譬如你的需要使用此库的源代码文件在桌面，那么就将压缩包里面的文件放在桌面），在源代码里加入&nbsp;#include "all"&nbsp;并开启 C++11 或更高版本进行编译即可食用。可以拿实例来判断是否配置成功。<br>如果你只想快速食用的话，可以尝试把这个压行版放进你的源代码：<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#define var auto
+#define val const auto
+#define let constexpr auto
+void print(std::string fmt){std::cout&lt;&lt;fmt;}template&lt;class T&gt;void print(std::string fmt,T x){for(size_t i=0ull;i&lt;fmt.size();i++){if(i&lt;fmt.size()-1&amp;&amp;fmt[i]=='{'&amp;&amp;fmt[i+1]=='}'){std::cout&lt;&lt;std::to_string(x);i++;}else{std::cout&lt;&lt;fmt[i];}}}template&lt;class T,class...More&gt;void print(std::string fmt,T x,More...more){size_t p=-1;for(size_t i=0ull;i&lt;fmt.size();i++){if(i&lt;fmt.size()-1&amp;&amp;fmt[i]=='{'&amp;&amp;fmt[i+1]=='}'){std::cout&lt;&lt;std::to_string(x);p=i+2;break;}else{std::cout&lt;&lt;fmt[i];}}if(p!=size_t(-1)&amp;&amp;p&lt;fmt.size()){print(fmt.substr(p,fmt.size()-p),more...);}}template&lt;class...More&gt;void println(More...more){print(more...);print(std::string("\n"));}struct{void operator()(){}template&lt;class T&gt;void operator()(T&amp;x){std::cin&gt;&gt;x;}template&lt;class T,class...More&gt;void operator()(T&amp;x,More&amp;...more){operator()(x);operator()(more...);}template&lt;class T&gt;operator T(){T x;std::cin&gt;&gt;x;return x;}template&lt;class T&gt;T get(){return(T)(*this);}}read;
+复制<br><br><br>用于提供并实现部分 print.hpp 需要的占位符的 toString 函数接口。对于所有的 toString 函数，假如要转换的数据类型为 T，那么其参数列表应该为如下形式：<br>std::string toString(std::string fmt, T n) { }
+复制<br>其中 fmt 是占位符的具体形式（不包括两边的大括号）。返回的 string 就是 print 会进行替换的实际内容。<br><br>类似 C++23 的 print 函数，只是功能少一些。使用&nbsp;{}&nbsp;作为占位符，原版特性：<a data-tooltip-position="top" aria-label="https://en.cppreference.com/w/cpp/io/print" rel="noopener" class="external-link" href="https://en.cppreference.com/w/cpp/io/print" target="_blank">std::print - cppreference.com</a>。这个版本是好渴鹅自己手写的版本，占位符的原理就是通过 conversion.hpp 里提供的接口 toString(string, T) 来进行转换。可以对 toString 进行重载来达到输出自己的类型的效果。<br>除了对 float/double 特殊占位符判断外，其他类型都是直接调用 std::to_string 来解决的。浮点数的占位符支持&nbsp;{x}&nbsp;输出&nbsp;xx&nbsp;位有效位数，{.x}&nbsp;四舍五入&nbsp;xx&nbsp;位。<br><br>支持三种输入方式：<br>var/val a = read.get&lt;type&gt;(), b = read.get&lt;type&gt;();
+
+type a = read, b = read;
+
+type a, b;
+read(a, b);
+复制<br>var/val 见 variable.hpp<br><br>定义了类似 Kotlin 等的变量定义方式。具体地：<br>#define var auto
+#define val const auto
+#define let constexpr auto
+复制<br>需要注意的是编译时常量使用的是 let。<br><br>包含了本库的所有头文件。<br><br>#include "all"
+
+using namespace std;
+
+int main() {
+  val a = read.get&lt;int&gt;(), b = read.get&lt;int&gt;();
+  println("{}+{}={}", a, b, a + b);
+
+  int c = read, d = read;
+  println("{}+{}={}", c, d, c + d);
+
+  int e, f;
+  read(e, f);
+  println("{}+{}={}", e, f, e + f);
+  
+  int n = read;
+  foreach(1, n, [](val x) {
+    print("{} ", x);
+  });
+  return 0;
+}
+复制<br>终端输入：<br>1 1
+1 1
+1 1
+10
+复制<br>终端输出：<br>1+1=2
+1+1=2
+1+1=2
+1 2 3 4 5 6 7 8 9
+复制]]></description><link>开源项目\modern-c++-库.html</link><guid isPermaLink="false">开源项目/Modern C++ 库.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Mon, 19 Aug 2024 08:33:23 GMT</pubDate></item><item><title><![CDATA[鸡的故事]]></title><description><![CDATA[ 
+ <br>灯火渐渐地缩小了，在预告电费的已经不多；电费又不是老牌，早击得生活很艰难。公鸡的啼叫在四近，昏暗的电脑在身边：是昏沉的晨。<br>我关了屏幕，向后一仰，靠在椅背上；捏着《鸡鸡记》的手搁在膝髁上。<br>我在朦胧中，看见一个鸡的故事。<br>这故事很美丽，幽雅，有趣。许多美的鸡和美的蛋，错综起来像一天云锦，而且万颗奔星似的飞动着，同时又展开去，以至于无穷。<br>我仿佛记得坐拖拉机经过农场，两旁的草地，树木，花朵，鸡，鸭，农夫与樵夫，鸡舍，田，草垛，农夫与妇人，地主，吃食的胖猪，企鹅，吃糖，天，云，树，……都映射在模糊的眼睛里，随<br>
+着每一加速，各个]]></description><link>魔改文章\鸡的故事.html</link><guid isPermaLink="false">魔改文章/鸡的故事.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Sun, 18 Aug 2024 06:51:32 GMT</pubDate></item><item><title><![CDATA[少年公鸡]]></title><description><![CDATA[ 
+ <br>深蓝的天空中挂着一轮金黄的明月，下面是 yl 的机房，都摆着一望无际的、漆黑的电脑。其间有一个十一二岁的少年，手拿一把键盘，向一群网友尽力地刺去。那网友却账号一退，反从他的胯下逃走了。<br>这少年便是美公鸡。我认识他时，也不过十多岁，离现在将有一两年了；那时我的键盘还在世，质量也好，我正是一个键盘侠。那一年，yl 是考试的大年。这么多考试，说是一年才能轮到一回，所以很郑重。八月里做题，题目极多，软件很讲究，做的人也很多，代码也要防偷去。我家只有一个题月（我们这里替人做题的分三种：整年给一定人家做工的叫长题；按日给人做题的叫短题；自己也做题，之只在过年过节以及交代码时候来给一定的人家做题的叫题月），做不过来，他便对父亲说，可以叫他的儿子美公鸡来管键盘的。<br>我的父亲允许了；我也很高兴，因为我早听到公鸡这名字，而且知道他与我仿佛年纪，鸡年生的，性别为公，所以他的父亲叫他公鸡。它是能暴切紫题 AK 比赛的。<br>我于是日日盼望八月。八月到，公鸡也就到了。好不容易到了暑假，有一日，母亲告诉我，公鸡来了，我便飞跑地去看。他正在机房里，红色的鸡头，头长一片小鸡冠，颈上套一个明晃晃的银项圈，这可见他的父亲十分爱他，怕他趋势，所以在神佛面前许下愿心，用圈子将他套住了。他见人很怕羞，只是不怕我，边和我做题，于是不到半日，我们便熟识了。<br>我们那时候不知做些什么，只记得公鸡很高兴，说是上洛谷之后，见了许多没有见过的题目。<br>第二日，我便要他做题。他说：「这不能。须网络好了才好，我们洛谷上，看了题，我打开一个 IDE 来，用 USB 线连接键盘与电脑，连上鼠标，看题目会做时，我快速地在键盘上只一敲，那代码便留在磁盘上了。什么算法都有：最短路、网络流、扫描线、树套树……」<br>我于是又很盼望来网。<br>公鸡又跟我说：「现在网速太慢，你夏天到我们这边来。我们日里到 Codeforces 打比赛去，算法数据结构都有，签到题也有，送命题也有。晚上我和爹打 ABC 去，你也去。」<br>「会做么。」<br>「不是。菜的人不会做了打一个暴力，我们这里是不算零分的。要管的是打表、卡常、吸氧。月亮地下，你听，啦啦的响了，老六在打表了。你便拿起键盘，轻轻地 at 去……」<br>我当时并不知道这所谓的老六是怎么一件东西——便是现在也没有知道——只是无端的觉得非人而很狗。<br>「他不回复么。」<br>「有键盘呢。走到了，看见老六了，你就骂。这畜生很伶俐，倒向你本来，反从胯下窜了。它的嘴是油一般的滑。」<br>我素不知道天下有这许多新鲜事：网上有毒瘤的数据结构体题；公鸡又这样危险的经历，我先前单知道他在菜市场里出卖罢了。<br>「我们 AT 里，管理员要来的时候，就有很多老六只是叫，都有狗似的大嘴……」<br>阿，公鸡的心里又无穷无尽稀奇的事，都是我往常的一朋友所不知道的。公鸡在海边时，他们都和我一样，只看见学校里高墙上的四角的天空。<br>可惜九月过去了，公鸡须会学校里去。我急得大哭，他也躲在机房里，不可能出门，但终于被他父亲带走了。他后来还托他的父亲带给我一台电脑和一把声音很大的键盘，我也曾送他一两次东西，但从此没有再见面。]]></description><link>魔改文章\少年公鸡.html</link><guid isPermaLink="false">魔改文章/少年公鸡.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 21 Aug 2024 13:08:14 GMT</pubDate></item><item><title><![CDATA[二阶贝塞尔曲线]]></title><description><![CDATA[ 
+ <br><br>现有两条线段  与 ，你需要画一条  至  的贝塞尔曲线。对于  上的任意一点 ，找到与之对应的  并满足 。在  到  的线段上找到一点  使得   = 。 连出的曲线就是贝塞尔曲线。<br>现在给你  与 ，要你求这条贝塞尔曲线在  位置的点的坐标。<br><br>信息
+     <br>
+ 
+<br><br>一行一个浮点数表示答案，答案需保留两位小数。<br><br>
+<br>本题所有输入的数均为整数
+<br>本题所有输入的数的绝对值不超过 。
+]]></description><link>题目\二阶贝塞尔曲线.html</link><guid isPermaLink="false">题目/二阶贝塞尔曲线.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:25:50 GMT</pubDate></item><item><title><![CDATA[立交桥]]></title><description><![CDATA[ 
+ <br>ww难度：提高+/省选-<br><br>好渴鹅正在城市天际线 2 当中设计立交桥。现在好渴鹅的立交桥上面有  个结点，现在有  条单向的公路/匝道连接着一定的两个结点。现在你知道这  条公路连接的结点编号  与  以及这条公路的车道数 ，这代表着这条公路上面任意一个点都可以同时走  辆车，也就是  到  的最大车流量为 。<br>假如一个结点的后继有多条，那么你可以将这个结点的车流量分给后继结点。例如  可以到  和 ，而  到  的最大车流量为 ，对于任意一个  的正整数，可以将  的车流量分到  、 的车流量分到 ，只要最大车流量最大。<br>假如一个结点的前继有多条，那么所有前继的车流量会汇流到这里，即将所有前继的最大车流量加起来即可。<br>对于一条链，这条链的最大车流量是这条链上所有边的车流量的最小值。<br>请问你从  结点到  结点的最大车流量是多少。<br><br><br>信息
+<br>
+<br>
+<br>
+<br>
+
+<br><br>Info
+一行一个 ，表示  到  的最大车流量。
+<br><br>
+<br>
+<br>
+<br>
+]]></description><link>题目\立交桥.html</link><guid isPermaLink="false">题目/立交桥.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 08:45:06 GMT</pubDate></item><item><title><![CDATA[clangd 安装]]></title><description><![CDATA[ 
+ <br>LLVM 是以 BSD 许可来开发的开源的编译器框架系统，其中包含了 C/C++ 编译器 clang 与 clang++。其对应的基于 LSP 的语法分析器功能很强大。如 VS Code 中的 <a data-tooltip-position="top" aria-label="VS Code/插件推荐/clangd" data-href="VS Code/插件推荐/clangd" href="vs-code\插件推荐\clangd.html" class="internal-link" target="_self" rel="noopener">clangd</a> 插件，就是使用的本地 clangd 程序。<br><br>由于 clangd 依赖它的编译器 clang，因此需要事先安装 clang。安装完 clang 之后，再安装 clangd。本文使用的包管理器是 apt。<br>$ sudo apt install update  # 更新包存储库信息
+$ sudo apt install clang  # 安装 clang
+$ which clang  # 查看 clang 是否安装成功
+$ sudo apt install clangd  #  安装 clangd
+$ which clangd  # 查看 clangd 是否安装成功
+复制<br><br>在 <a data-href="clangd" href="vs-code\插件推荐\clangd.html" class="internal-link" target="_self" rel="noopener">clangd</a> 插件当中，可以输入 clangd: Download language server 就可以自动从 Github 下载。但是由于众所周知的原因，Github 一般都是连接不上的。<br>因此我们直接从 Github 下载 LLVM，网址：<a rel="noopener" class="external-link" href="https://github.com/llvm/llvm-project" target="_blank">https://github.com/llvm/llvm-project</a>。在右下角找到 Release 页面，点进去下载最新版（最好是 win64 安装器）。<br>下载之后双击安装器进行安装。记得将 /安装目录/bin 加入环境变量。]]></description><link>资源\构建工具\clangd-安装.html</link><guid isPermaLink="false">资源/构建工具/clangd 安装.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 05:13:18 GMT</pubDate></item><item><title><![CDATA[FlowUs]]></title><description><![CDATA[ 
+ <br><br>FlowUs 可以看做 <a data-href="Notion" href="资源\写作软件\notion.html" class="internal-link" target="_self" rel="noopener">Notion</a> 的全面国产化的版本，并贴合了国产用户的使用习惯。同样使用块编辑模式，但是加入了更多元素，并对国产视频/媒体网站的链接做了适配。<br><br>云存储不支持本地编辑，非会员用户存储空间过小。]]></description><link>资源\写作软件\flowus.html</link><guid isPermaLink="false">资源/写作软件/FlowUs.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 03:09:43 GMT</pubDate></item><item><title><![CDATA[Mark Text]]></title><description><![CDATA[ 
+ <br><br>Mark Text 是所有 Markdown 编辑器里面最像 <a data-href="Typora" href="资源\写作软件\typora.html" class="internal-link" target="_self" rel="noopener">Typora</a> 的那个，可以说 Mark Text 就是完全为付不起费的 Typora 用户准备的，在易用性方便无限接近 Typora。并且不收费、开源。<br><br>默认没有中文，不支持 Markdown 拓展语法。本地化。]]></description><link>资源\写作软件\mark-text.html</link><guid isPermaLink="false">资源/写作软件/Mark Text.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 03:00:35 GMT</pubDate></item><item><title><![CDATA[Notion]]></title><description><![CDATA[ 
+ <br><br>Notion，即概念。Notion 更像是个未来化的产品。它使用的编辑模式是“块”编辑模式，即一个字可以是一个块，一段文字也可以是一块，通过这种编辑模式可以方便地排版段落、图片等。并内置了可以使用公式的增强表格，修改颜色也较为方便。<br><br>不完全遵守 Markdown 语法，编辑体验较差，甚至不如 <a data-href="Obsidian" href="资源\写作软件\obsidian.html" class="internal-link" target="_self" rel="noopener">Obsidian</a>，且在线编辑方式在国内可能会被墙，没有中文。]]></description><link>资源\写作软件\notion.html</link><guid isPermaLink="false">资源/写作软件/Notion.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 03:07:52 GMT</pubDate></item><item><title><![CDATA[Obsidian]]></title><description><![CDATA[ 
+ <br><br>Obsidian 是优秀的笔记软件，也使用 Markdown 语法。相比于 VS Code 来说，Obsidian 内置了很多新奇的功能；相比于 Typora 来说，Obsidian 有内置的插件市场，插件同样很多，可以进行高度个性化。新版也加入了所见即所得编辑模式，支持很多 Markdown 拓展语法。<br><br>云存档需要 €€£，所见即所得编辑模式体验感不如 <a data-href="Typora" href="资源\写作软件\typora.html" class="internal-link" target="_self" rel="noopener">Typora</a>。]]></description><link>资源\写作软件\obsidian.html</link><guid isPermaLink="false">资源/写作软件/Obsidian.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 03:03:49 GMT</pubDate></item><item><title><![CDATA[Typora]]></title><description><![CDATA[ 
+ <br><br>Typora 是 Markdown 编辑器里面所见即所得的标杆，是践行所见即所得的先锋。它的所见即所得流畅程度、易用性都是顶尖。支持公式及时预览。<br><br>主题不算多，并且收费较贵，公式渲染较慢，不支持 Markdown 拓展语法。本地化。]]></description><link>资源\写作软件\typora.html</link><guid isPermaLink="false">资源/写作软件/Typora.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 03:00:39 GMT</pubDate></item><item><title><![CDATA[VS Code]]></title><description><![CDATA[ 
+ <br><br>VS Code 原本是为 Web 前端工程师准备的编辑器，但是由于对很多语言都支持、拓展市场拓展极多，被誉为最好的文本编辑器。VS Code 默认不支持 Markdown 渲染，但是可以通过插件渲染 Markdown，具体优点跟 Markdown 渲染器有关。<br>如 Markdown-preview 插件就提供了传统的双栏预览，并支持较多 Markdown 拓展语法，主题也很多，但是没有中文。vscode-office 插件提供了与 <a data-href="Typora" href="资源\写作软件\typora.html" class="internal-link" target="_self" rel="noopener">Typora</a> 相像的所见即所得编辑，但是性能更差，功能也较少。<br><br>体积较大，与插件有一定关系。本地化。]]></description><link>资源\写作软件\vs-code.html</link><guid isPermaLink="false">资源/写作软件/VS Code.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 05:12:54 GMT</pubDate></item><item><title><![CDATA[C／C++]]></title><description><![CDATA[ 
+ <br><br><a data-tooltip-position="top" aria-label="http://www.microsoft.com" rel="noopener" class="external-link" href="http://www.microsoft.com" target="_blank">Microsoft</a> 微软官方 C/C++ 开发插件。<br><br>用来开发 C/C++ 源代码文件并编译、调试等一系列功能。<br><br>C/C++ 的智能感知引擎可以在写代码的时候帮你自动完成关键字、已定义类型、函数等，只需要你键入其中的一部分字母。它会根据其类型的不同标记上不同的图标以用与区分。<br>需要注意的是，C/C++ 默认提供的智能感知程序默认不会导入外部库的信息，只有当你包含了所属的库文件，它才会将库里面的内容读取进内存。<br>只能感知也会自动补全库文件的名称，只需要在 C/C++ 的配置页面填上所需库的目录即可，或是在环境变量中加入编译器的路径，C/C++ 拓展便会自动判断该编译器的类型，并找到标准库。<br><br>C/C++ 也默认集成了静态检查引擎，该引擎使用的是微软自行研究的 MSVC 的静态检查引擎，不依赖本地编译器，并贴心地为中国用户准备了中文信息。<br>静态检查会在你写代码的时候定期帮你找到代码的错误与潜在的危险。但是，C/C++ 的静态检查过于迟钝，如果追求更快的速度可以使用 <a data-href="VS Code/插件推荐/clangd" href="vs-code\插件推荐\clangd.html" class="internal-link" target="_self" rel="noopener">VS Code/插件推荐/clangd</a> 替换此工作。<br><br>C/C++ 自带了一套运行与调试配置，只需要打开一个工作区，按启动调试或以非调试模式运行，C/C++ 就会自动在 .vscode 目录下新建 tasks.json 与 launch.json 两个调试信息配置文件，并根据其内容启动调试。<br>需要注意的是，使用 C/C++ 自带的运行与调试功能不仅需要可用的编译器用与编译源代码，还需要 gdb 等调试器来完成调试操作，包括以非调试模式运行也是需要 gdb 的。<br>由于 gdb 无法在中文目录下工作，请检查你要调试的文件是否处于非中文路径下，不然 gdb 将无法工作。]]></description><link>vs-code\插件推荐\c／c++.html</link><guid isPermaLink="false">VS Code/插件推荐/C／C++.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 08:44:53 GMT</pubDate></item><item><title><![CDATA[clangd]]></title><description><![CDATA[ 
+ <br><br><a data-tooltip-position="top" aria-label="http://www.microsoft.com" rel="noopener" class="external-link" href="http://www.microsoft.com" target="_blank">Microsoft</a> 微软官方 C/C++ 开发插件。<br><br>用来开发 C/C++ 源代码文件并编译、调试等一系列功能。<br><br>C/C++ 的智能感知引擎可以在写代码的时候帮你自动完成关键字、已定义类型、函数等，只需要你键入其中的一部分字母。它会根据其类型的不同标记上不同的图标以用与区分。<br>需要注意的是，C/C++ 默认提供的智能感知程序默认不会导入外部库的信息，只有当你包含了所属的库文件，它才会将库里面的内容读取进内存。<br>只能感知也会自动补全库文件的名称，只需要在 C/C++ 的配置页面填上所需库的目录即可，或是在环境变量中加入编译器的路径，C/C++ 拓展便会自动判断该编译器的类型，并找到标准库。<br><br>C/C++ 也默认集成了静态检查引擎，该引擎使用的是微软自行研究的 MSVC 的静态检查引擎，不依赖本地编译器，并贴心地为中国用户准备了中文信息。<br>静态检查会在你写代码的时候定期帮你找到代码的错误与潜在的危险。但是，C/C++ 的静态检查过于迟钝，如果追求更快的速度可以使用 <a data-href="VS Code/插件推荐/clangd" href="vs-code\插件推荐\clangd.html" class="internal-link" target="_self" rel="noopener">VS Code/插件推荐/clangd</a> 替换此工作。<br><br>C/C++ 自带了一套运行与调试配置，只需要打开一个工作区，按启动调试或以非调试模式运行，C/C++ 就会自动在 .vscode 目录下新建 tasks.json 与 launch.json 两个调试信息配置文件，并根据其内容启动调试。<br>需要注意的是，使用 C/C++ 自带的运行与调试功能不仅需要可用的编译器用与编译源代码，还需要 gdb 等调试器来完成调试操作，包括以非调试模式运行也是需要 gdb 的。<br>由于 gdb 无法在中文目录下工作，请检查你要调试的文件是否处于非中文路径下，不然 gdb 将无法工作。]]></description><link>vs-code\插件推荐\clangd.html</link><guid isPermaLink="false">VS Code/插件推荐/clangd.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:26:23 GMT</pubDate></item><item><title><![CDATA[Code Runner]]></title><description><![CDATA[ 
+ <br><br>Jun Han 开发的快捷代码片段运行器。<br><br>安装该拓展后，可以在编辑器的右上方找到三角形运行符号，点击即可。Code Runner 支持运行市面上大多数语言，包括：C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran, Ring, Standard ML, Zig, Mojo。<br>需要注意的是 Code Runner 仅仅是通过编译脚本快速运行，编译器必须自行下载安装并将编译器的所在路径加入环境变量。另外，大多数语言都需要控制台输入来快速获取信息，可以在 Code Runner 的拓展设置里面勾选 Run in Terminal 即可在控制台输入信息，否则可能无法输入。<br>还有，若在编辑器内框选了代码片段，那么 Code Runner 会将代码片段保存到 tempCodeRunnerFile 文件并运行。可以在 settings.json（全局或项目）里面添加 "code-runner.executorMap" 项自行修改运行命令。]]></description><link>vs-code\插件推荐\code-runner.html</link><guid isPermaLink="false">VS Code/插件推荐/Code Runner.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 25 Sep 2024 02:41:56 GMT</pubDate></item><item><title><![CDATA[Error Lens]]></title><description><![CDATA[ 
+ <br><br>一款能够使错误或警告更加显眼的插件。<br><br>Error Lens 提供的报错不同于 VS Code 的默认报错，是红色/橙色下划波浪线，不够显眼。Error Lens 插件则会将报错的那一整行全部高亮，并在行的末尾注上错误信息，这种设计方式不仅使错误更直观，还方便查看错误的原因。]]></description><link>vs-code\插件推荐\error-lens.html</link><guid isPermaLink="false">VS Code/插件推荐/Error Lens.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 21 Aug 2024 13:24:48 GMT</pubDate></item><item><title><![CDATA[GitLens]]></title><description><![CDATA[ 
+ <br><br>Gitlens 是一款由 <a data-tooltip-position="top" aria-label="https://gitkraken.com/" rel="noopener" class="external-link" href="https://gitkraken.com/" target="_blank">GitKraken</a> 开发的适用于 VS Code 的高效源代码管理插件。<br><br>GitLens 对 VS Code 的 Git 功能做了很大的优化。<br><br>在左侧边栏里面找到 GitLens，点进去就可以看到 Git 以及 GitLens 的使用教程、云端补丁（需要 Pro）以及工作区预览（也需要 Pro）。<br><br>这应该算是一个功能信息集成最多的一个页面了。从上到下分别是：每一次提交的详细信息、AI 解释、时间线、文件历史以及可视化文件历史（需要 Pro）。<br>提交信息比较好解释，就是每一次提交更改了什么内容，删去了什么文件一系列的信息。AI 解释可以理解每一次提交造成了什么改变。时间线就是记录了所有提交的时间，让你看看你有多勤奋。文件历史就是存储了一部分文件的历史版本或历史提交信息。<br><br>GitLens 对 VS Code 的文本编辑器加入了 Git 集成。例如，当你的光标悬停在某一行的时候，他会在这一行的后面用灰色字体展示出这一行的上一次改变时间。你还会发现，在有些行号的旁边或中间，会有红绿蓝的标记，这就是记录了每一行的改变信息。点开来，就可以轻松看到当前行的上一个版本，也可以退回该版本。]]></description><link>vs-code\插件推荐\gitlens.html</link><guid isPermaLink="false">VS Code/插件推荐/GitLens.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Thu, 22 Aug 2024 12:56:05 GMT</pubDate></item><item><title><![CDATA[Polacode-2022]]></title><description><![CDATA[ 
+ <br><br>Polacode 的改版，修复了原版中的若干 bug 并添加了一定的自定义选项。<br><br>Polacode-2022 是一个代码截图工具，只需要键入 Ctrl+Alt+P 打开命令面板搜索 Polacode-2022，并按下回车打开截图窗口，就可以开始截图了。<br>Polacode-2022 会自动监视你的光标选择，你只需要用鼠标在源代码当中框选一段想要截取的代码，Polacode-2022 就会记录下来并展示在窗口当中。点击窗口下方的彩色圆形按钮就可以保存代码截图。<br>同时，还可以再窗口当中设置截图设置，比如背景颜色、是否开启阴影等。]]></description><link>vs-code\插件推荐\polacode-2022.html</link><guid isPermaLink="false">VS Code/插件推荐/Polacode-2022.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Wed, 21 Aug 2024 13:24:34 GMT</pubDate></item><item><title><![CDATA[Catppuccin Perfect Icons]]></title><description><![CDATA[ 
+ <br>w## 信息<br>Thang Nguyen 出品的图标主题，颇有都市霓虹灯的感觉。<br><br><img alt="catppucin-icon.png > pic_center" src="lib\media\catppucin-icon.png">]]></description><link>vs-code\美化推荐\catppuccin-perfect-icons.html</link><guid isPermaLink="false">VS Code/美化推荐/Catppuccin Perfect Icons.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 08:45:07 GMT</pubDate><enclosure url="lib\media\catppucin-icon.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\catppucin-icon.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Eva Theme]]></title><description><![CDATA[ 
+ <br>w## 信息<br>一款由 fisheva 出品的主题。<br><br>白色与黑色主题。<br><img alt="eva-light.png" src="lib\media\eva-light.png"><br><img alt="eva-dark.png" src="lib\media\eva-dark.png">]]></description><link>vs-code\美化推荐\eva-theme.html</link><guid isPermaLink="false">VS Code/美化推荐/Eva Theme.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 08:45:08 GMT</pubDate><enclosure url="lib\media\eva-light.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\eva-light.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Fluent UI for VSCode]]></title><description><![CDATA[ 
+ <br><br>Leandro Rodrigues 发布的一款用与 VS Code 的 Fluent UI 样式修改版。<br><br>与 <a data-href="Eva Theme" href="vs-code\美化推荐\eva-theme.html" class="internal-link" target="_self" rel="noopener">Eva Theme</a> Dark 版本搭配：<br><img alt="eva-fluent-ui-editor.png" src="lib\media\eva-fluent-ui-editor.png"><br><img alt="eva-fluent-ui-themes.png" src="lib\media\eva-fluent-ui-themes.png"><br><img alt="eva-fluent-ui-multi-editor.png" src="lib\media\eva-fluent-ui-multi-editor.png">]]></description><link>vs-code\美化推荐\fluent-ui-for-vscode.html</link><guid isPermaLink="false">VS Code/美化推荐/Fluent UI for VSCode.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Fri, 30 Aug 2024 05:31:28 GMT</pubDate><enclosure url="lib\media\eva-fluent-ui-editor.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\eva-fluent-ui-editor.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[关于本站]]></title><description><![CDATA[ 
+ <br><a class="internal-link" data-href="/" href="." target="_self" rel="noopener">渴鹅笔记</a> 是一个有好渴鹅创建的记录个人笔记发癫日常的部署在 个个静态页面托管服务 的个人静态页面，使用 Obsidian 作为写作软件，Webpage HTML Export 为导出插件，Border 为 Obsidian 主题。<br>再说一句：美公鸡是个大煞笔。]]></description><link>关于本站.html</link><guid isPermaLink="false">关于本站.md</guid><dc:creator><![CDATA[好渴鹅]]></dc:creator><pubDate>Tue, 24 Sep 2024 08:53:53 GMT</pubDate></item></channel></rss>
