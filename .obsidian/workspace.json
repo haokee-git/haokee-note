@@ -11,14 +11,14 @@
             "id": "b5e9b772c772cfe7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "主页.md",
-                "mode": "source",
-                "source": false
+                "aFile": "主页.md",
+                "bFile": "主页.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "主页"
+              "icon": "diff",
+              "title": "Diff: 主页"
             }
           }
         ]
@@ -94,13 +94,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "主页.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "主页 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -212,8 +211,8 @@
   },
   "active": "b5e9b772c772cfe7",
   "lastOpenFiles": [
-    "比赛记录/2025 九月/2024.9.23 模拟赛.md",
     "主页.md",
+    "比赛记录/2025 九月/2024.9.23 模拟赛.md",
     "常用公式证明/匀变加速直线运动.md",
     "城市天际线/模组商店.md",
     "城市天际线/交通建设.md",
