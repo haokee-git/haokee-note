@@ -11,6 +11,16 @@
             "id": "69745191fc300b13",
             "type": "leaf",
             "state": {
+              "type": "pkmer-downloader",
+              "state": {},
+              "icon": "bookmark",
+              "title": "Pkmer Market"
+            }
+          },
+          {
+            "id": "aba615d2fb76992b",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "比赛记录/2025 九月/2025.9.25 模拟赛.md",
@@ -21,7 +31,8 @@
               "title": "2025.9.25 模拟赛"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,7 +221,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "69745191fc300b13",
+  "active": "aba615d2fb76992b",
   "lastOpenFiles": [
     "比赛记录/2025 九月/2025.9.25 模拟赛.md",
     "主页.md",
