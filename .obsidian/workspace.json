@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "37b4653d9242d379",
+        "id": "3dbd6355f5fc8c01",
         "type": "tabs",
         "children": [
           {
-            "id": "27338f624d7b618e",
+            "id": "03c6559d2bd5a6ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -109,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "主页.md",
+                "file": "比赛记录/2025 九月/2025.9.27 模拟赛.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "主页 的出链列表"
+              "title": "2025.9.27 模拟赛 的出链列表"
             }
           },
           {
@@ -210,8 +210,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "27338f624d7b618e",
+  "active": "03c6559d2bd5a6ea",
   "lastOpenFiles": [
+    "比赛记录/2025 九月/2025.9.18 模拟赛.md",
     "比赛记录/2025 九月/2025.9.27 模拟赛.md",
     "题目/题目标签.md",
     "比赛记录/2025 九月/2025.9.25 模拟赛.md",
@@ -222,7 +223,6 @@
     "城市天际线/交通建设.md",
     "城市天际线/简介.md",
     "比赛记录/2025 九月/2025.9.23 模拟赛.md",
-    "比赛记录/2025 九月/2025.9.18 模拟赛.md",
     "比赛记录/2025 九月/2025.9.22 模拟赛.md",
     "比赛记录/2024 九月/2024.9.23 题目.md",
     "比赛记录/2025 七月/2025.7.30 模拟赛.md",
