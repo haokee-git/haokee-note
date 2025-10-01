@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "d87cef06135d75bb",
+            "id": "2a557a29b30268e6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "file/Checkboxes.png"
+                "file": "题目/题目标签.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Checkboxes"
+              "icon": "lucide-file",
+              "title": "题目标签"
             }
           }
         ]
@@ -224,10 +226,10 @@
   },
   "active": "4720c83b294f6d93",
   "lastOpenFiles": [
-    "file/Checkboxes.png",
+    "题目/题目标签.md",
     "比赛记录/2025 九月/2025.9.30 模拟赛.md",
     "主页.md",
-    "题目/题目标签.md",
+    "file/Checkboxes.png",
     "比赛记录/2025 九月/2025.9.27 模拟赛.md",
     "题目/题目标签 copy.md",
     "比赛记录/2024 十月/2024.10.3 题目.md",
