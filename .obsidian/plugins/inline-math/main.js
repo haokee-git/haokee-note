@@ -57,8 +57,8 @@ var NoMoreFlickerSettingTab = class extends import_obsidian.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     });
-    containerEl.createEl("h4", { text: "Debug mode" });
-    new import_obsidian.Setting(containerEl).setName("Disable decorations").setDesc("If turned on, decorations to hide braces adjacent to dollar signs are disabled.").addToggle((toggle) => {
+    new import_obsidian.Setting(containerEl).setName("Debug mode").setHeading();
+    new import_obsidian.Setting(containerEl).setName("Disable decorations").setDesc("If turned on, decorations to hide braces adjacent to dollar signs are disabled. This is especially useful when you want to see what this plugin does under the hood.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.disableDecorations).onChange(async (disable) => {
         this.plugin.settings.disableDecorations = disable;
         this.plugin.remakeViewPlugin();
@@ -88,7 +88,9 @@ var NoMoreFlickerSettingTab = class extends import_obsidian.PluginSettingTab {
   }
 };
 
-// src/cleaner.ts
+// src/decoration-and-atomic-range.ts
+var import_state = require("@codemirror/state");
+var import_view = require("@codemirror/view");
 var import_language2 = require("@codemirror/language");
 
 // src/utils.ts
@@ -122,35 +124,7 @@ function selectionSatisfies(state, predicate) {
   return ret;
 }
 
-// src/cleaner.ts
-function cleaner(view) {
-  const changes = [];
-  (0, import_language2.syntaxTree)(view.state).iterate({
-    enter(node) {
-      if (isInlineMathBegin(node, view.state)) {
-        if (view.state.sliceDoc(node.to, node.to + 3) == "{} ") {
-          changes.push({ from: node.to, to: node.to + 3 });
-        }
-      } else if (isInlineMathEnd(node, view.state)) {
-        if (view.state.sliceDoc(node.from - 3, node.from) == " {}") {
-          changes.push({ from: node.from - 3, to: node.from });
-        }
-      }
-    }
-  });
-  view.dispatch({ changes });
-}
-function cleanerCallback(editor) {
-  const view = editor.cm;
-  if (view) {
-    cleaner(view);
-  }
-}
-
 // src/decoration-and-atomic-range.ts
-var import_state = require("@codemirror/state");
-var import_view = require("@codemirror/view");
-var import_language3 = require("@codemirror/language");
 var DummyRangeValue = class extends import_state.RangeValue {
 };
 var createViewPlugin = (plugin) => import_view.ViewPlugin.fromClass(
@@ -164,7 +138,7 @@ var createViewPlugin = (plugin) => import_view.ViewPlugin.fromClass(
     impl(view) {
       const decorationBulder = new import_state.RangeSetBuilder();
       const atomicRangeBulder = new import_state.RangeSetBuilder();
-      const tree = (0, import_language3.syntaxTree)(view.state);
+      const tree = (0, import_language2.syntaxTree)(view.state);
       for (const { from, to } of view.visibleRanges) {
         tree.iterate({
           from,
@@ -215,11 +189,11 @@ var createViewPlugin = (plugin) => import_view.ViewPlugin.fromClass(
 
 // src/transaction-filter.ts
 var import_state3 = require("@codemirror/state");
-var import_language5 = require("@codemirror/language");
+var import_language4 = require("@codemirror/language");
 
 // src/latex-suite.ts
 var import_state2 = require("@codemirror/state");
-var import_language4 = require("@codemirror/language");
+var import_language3 = require("@codemirror/language");
 function handleLatexSuite(tr, plugin) {
   if (tr.docChanged && !tr.selection) {
     const changes = handleLatexSuiteBoxing(tr.startState, tr.changes);
@@ -238,7 +212,7 @@ function handleLatexSuite(tr, plugin) {
   }
 }
 function handleLatexSuiteTabout(state, newSelection) {
-  const tree = (0, import_language4.syntaxTree)(state);
+  const tree = (0, import_language3.syntaxTree)(state);
   const doc = state.doc.toString();
   const newRanges = [];
   for (const range of newSelection.ranges) {
@@ -255,7 +229,7 @@ function handleLatexSuiteTabout(state, newSelection) {
   return import_state2.EditorSelection.create(newRanges, newSelection.mainIndex);
 }
 function handleLatexSuiteBoxing(state, changes) {
-  const tree = (0, import_language4.syntaxTree)(state);
+  const tree = (0, import_language3.syntaxTree)(state);
   let changeToReplace;
   changes.iterChanges((fromA, toA, fromB, toB, inserted) => {
     if (inserted.toString() === "\\boxed{" + state.sliceDoc(fromA, toA) + "}") {
@@ -302,7 +276,7 @@ var makeTransactionFilter = (plugin) => {
   });
 };
 function getChangesForDeletion(state) {
-  const tree = (0, import_language5.syntaxTree)(state);
+  const tree = (0, import_language4.syntaxTree)(state);
   const doc = state.doc.toString();
   const changes = [];
   for (const range of state.selection.ranges) {
@@ -330,7 +304,7 @@ function getChangesForDeletion(state) {
   return changes;
 }
 function getChangesForInsertion(state, changes) {
-  const tree = (0, import_language5.syntaxTree)(state);
+  const tree = (0, import_language4.syntaxTree)(state);
   const doc = state.doc.toString();
   const changesToAdd = [];
   const beginningOfChanges = /* @__PURE__ */ new Set();
@@ -374,7 +348,7 @@ function getChangesForInsertion(state, changes) {
   return changesToAdd;
 }
 function getChangesForSelection(state, newSelection) {
-  const tree = (0, import_language5.syntaxTree)(state);
+  const tree = (0, import_language4.syntaxTree)(state);
   const doc = state.doc.toString();
   const changes = [];
   for (let i = 0; i < newSelection.ranges.length; i++) {
@@ -425,16 +399,6 @@ var NoMoreFlicker = class extends import_obsidian3.Plugin {
     this.registerEditorExtension(this.viewPlugin);
     this.remakeViewPlugin();
     this.registerEditorExtension(makeTransactionFilter(this));
-    this.addCommand({
-      id: "clean",
-      name: "Clean up braces in this note",
-      editorCallback: cleanerCallback
-    });
-    this.addCommand({
-      id: "clean-all",
-      name: "Clean up braces in all the opened notes",
-      editorCallback: this.cleanAllMarkdownViews.bind(this)
-    });
   }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
@@ -448,16 +412,11 @@ var NoMoreFlicker = class extends import_obsidian3.Plugin {
       (node) => node.name.includes("HyperMD-table") || node.name.includes("hmd-table")
     );
   }
-  cleanAllMarkdownViews() {
-    this.app.workspace.iterateAllLeaves((leaf) => {
-      if (leaf.view instanceof import_obsidian3.MarkdownView) {
-        cleanerCallback(leaf.view.editor);
-      }
-    });
-  }
   remakeViewPlugin() {
     this.viewPlugin.length = 0;
     this.viewPlugin.push(createViewPlugin(this));
     this.app.workspace.updateOptions();
   }
 };
+
+/* nosourcemap */
