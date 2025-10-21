@@ -35,8 +35,7 @@
               "title": "题目标签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,13 +108,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "比赛记录/2025 十月/2025.10.21 模拟赛.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "题目标签 的大纲"
+              "title": "2025.10.21 模拟赛 的大纲"
             }
           },
           {
@@ -226,10 +225,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b1071a2772fa2d8c",
+  "active": "d335aeab037f41fa",
   "lastOpenFiles": [
-    "比赛记录/2025 十月/2025.10.21 模拟赛.md",
     "题目/题目标签.md",
+    "比赛记录/2025 十月/2025.10.21 模拟赛.md",
     "Excalidraw/Drawing 2025-10-21 16.36.30.excalidraw.md",
     "比赛记录/2025 十月/2025.10.18 模拟赛.md",
     "Excalidraw",
