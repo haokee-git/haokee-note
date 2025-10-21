@@ -35,7 +35,8 @@
               "title": "题目标签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file: vid",
+                "query": "tag:#模拟",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "比赛记录/2025 十月/2025.10.21 模拟赛.md",
+                "file": "题目/题目标签.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025.10.21 模拟赛 的大纲"
+              "title": "题目标签 的大纲"
             }
           },
           {
@@ -225,13 +226,13 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "d335aeab037f41fa",
+  "active": "b1071a2772fa2d8c",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-10-21 16.36.30.excalidraw.md",
     "比赛记录/2025 十月/2025.10.21 模拟赛.md",
+    "题目/题目标签.md",
+    "Excalidraw/Drawing 2025-10-21 16.36.30.excalidraw.md",
     "比赛记录/2025 十月/2025.10.18 模拟赛.md",
     "Excalidraw",
-    "题目/题目标签.md",
     "比赛记录/2025 十月/2025.10.7 模拟赛.md",
     "比赛记录/2025 十月/2025.10.16 模拟赛.md",
     "比赛记录/2025 十月/2025.10.14 模拟赛.md",
