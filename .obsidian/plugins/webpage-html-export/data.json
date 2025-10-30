@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.8.01",
+  "settingsVersion": "0.0.0",
   "exportOptions": {
     "createDocumentContainer": true,
     "keepModHeaderFooter": false,
@@ -10,7 +10,7 @@
     "postProcess": true,
     "displayProgress": true,
     "inlineHTML": false,
-    "exportPath": "",
+    "exportPath": "D:\\haokee-note\\.obsidian\\site",
     "filesToExport": [],
     "useFallbackRenderer": false,
     "addBodyClasses": true,
@@ -223,8 +223,8 @@
   "rssDateProperty": "date",
   "onlyExportModified": true,
   "deleteOldFiles": true,
-  "exportPreset": "website",
-  "openAfterExport": false,
+  "exportPreset": "online",
+  "openAfterExport": true,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",
     "(^|\\/)dist\\/",
