@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "主页.md",
+                "file": "比赛记录/2025 十月/2025.10.30 模拟赛.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "主页 的反向链接列表"
+              "title": "2025.10.30 模拟赛 的反向链接列表"
             }
           },
           {
@@ -211,8 +211,8 @@
   },
   "active": "c7045e87fa09c015",
   "lastOpenFiles": [
-    "题目/题目标签.md",
     "比赛记录/2025 十月/2025.10.30 模拟赛.md",
+    "题目/题目标签.md",
     "比赛记录/2025 十月/2025.10.28 模拟赛.md",
     "cmake",
     "数学笔记/2025.1.15 笔记.md",
