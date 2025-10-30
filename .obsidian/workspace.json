@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "516f78f78287688b",
+        "id": "2a54c059236522a1",
         "type": "tabs",
         "children": [
           {
-            "id": "c7045e87fa09c015",
+            "id": "4d5c4dcfaebc400a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -209,7 +209,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c7045e87fa09c015",
+  "active": "4d5c4dcfaebc400a",
   "lastOpenFiles": [
     "比赛记录/2025 十月/2025.10.30 模拟赛.md",
     "题目/题目标签.md",
