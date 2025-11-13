@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ac7101a0efad562a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "比赛记录/2025 十月/2025.10.30 模拟赛.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025.10.30 模拟赛"
-            }
-          },
-          {
             "id": "69e9df0b9113c390",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "比赛记录/2025 十一月/2025.11.13 模拟赛.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "题目标签"
+              "title": "2025.11.13 模拟赛"
             }
           }
         ]
@@ -108,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "比赛记录/2025 十月/2025.10.30 模拟赛.md",
+                "file": "比赛记录/2025 十一月/2025.11.13 模拟赛.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025.10.30 模拟赛 的大纲"
+              "title": "2025.11.13 模拟赛 的大纲"
             }
           },
           {
@@ -224,8 +210,13 @@
       "webpage-html-export:导出为HTML": false
     }
   },
-  "active": "ac7101a0efad562a",
+  "active": "69e9df0b9113c390",
   "lastOpenFiles": [
+    "题目/题目标签.md",
+    "比赛记录/2025 十一月/2025.11.13 模拟赛.md",
+    "比赛记录/2025 十一月",
+    "比赛记录/未命名.md",
+    "比赛记录/2025 十月/2025.10.30 模拟赛.md",
     "渴鹅新闻/2024 十一月/2024.11.11 星期一 - 2024.11.17 星期日.md",
     "渴鹅新闻/2024 十一月/2024.11.4 星期一 - 2024.11.10 星期日.md",
     "渴鹅新闻/2024 十一月/2024.10.28 星期五 - 2024.11.2 星期六.md",
@@ -248,10 +239,6 @@
     "题目/渴鹅系列/购买商品.md",
     "题目/渴鹅系列/购买大楼.md",
     "题目/渴鹅系列/鹅太公钓鱼.md",
-    "题目/渴鹅系列/「我不是盘神」.md",
-    "题解/Codeforces/CF1881E Block Sequence.md",
-    "题解/Codeforces/CF1881D Divide and Equalize.md",
-    "题解/Codeforces/CF1744D Divisibility.md",
     "cmake",
     "未命名.canvas",
     "Excalidraw",
@@ -265,7 +252,6 @@
     "比赛记录/2025 七月",
     "比赛记录/2025 九月",
     "比赛记录/2025 八月",
-    "隐藏的内容",
     "file/Pasted image 20250313170756.png",
     "file/Pasted image 20250313170715.png",
     "file/Pasted image 20250313170526.png",
