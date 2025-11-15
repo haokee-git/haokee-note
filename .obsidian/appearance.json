@@ -1,8 +1,8 @@
 {
   "nativeMenus": false,
-  "textFontFamily": "PingFang SC,微软雅黑,Inter",
+  "textFontFamily": "苹方-简,PingFang SC,微软雅黑,Inter",
   "monospaceFontFamily": "Maple Mono,JetBrains Mono,Consolas,Source Code Pro,Monaco,Courier New",
-  "interfaceFontFamily": "PingFang SC,微软雅黑,Inter",
+  "interfaceFontFamily": "苹方-简,PingFang SC,微软雅黑,Inter",
   "cssTheme": "Border",
   "baseFontSize": 16,
   "theme": "system",
