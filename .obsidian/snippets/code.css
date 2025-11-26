@@ -1,3 +1,111 @@
 code {
   color: var(--color-blue) !important;
 }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
+.HyperMD-codeblock .cm-comment {
+    color: rgb(170, 170, 170) !important;
+}
+
+.token.punctuation,
+.HyperMD-codeblock .cm-hmd-codeblock,
+.HyperMD-codeblock .cm-bracket {
+    color: #383a42 !important;
+}
+
+.token.selector,
+.token.tag,
+.HyperMD-codeblock .cm-tag,
+.HyperMD-codeblock .cm-property,
+.HyperMD-codeblock .cm-meta,
+.HyperMD-codeblock .cm-qualifier,
+.HyperMD-codeblock .cm-header,
+.HyperMD-codeblock .cm-quote,
+.HyperMD-codeblock .cm-hr,
+.HyperMD-codeblock .cm-link {
+    color: #e75545 !important;
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted,
+.HyperMD-codeblock .cm-attribute {
+    color: #986800 !important;
+}
+
+.HyperMD-codeblock .cm-atom,
+.token.boolean {
+    color: rgb(171, 71, 188) !important;
+}
+
+.HyperMD-codeblock .cm-number,
+.token.number {
+    color: rgb(244, 67, 54) !important;
+}
+
+.token.class-name {
+    color: rgb(0, 137, 123) !important;
+    font-style: italic !important;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted,
+.HyperMD-codeblock .cm-string,
+.HyperMD-codeblock .cm-builtin {
+    color: rgb(104, 159, 56) !important;
+    font-style: italic;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.HyperMD-codeblock .cm-string-2,
+.HyperMD-codeblock .cm-operator {
+    color: rgb(158, 157, 36) !important;
+}
+
+.token.atrule,
+.token.keyword,
+.HyperMD-codeblock .cm-keyword {
+    color: rgb(171, 71, 188) !important;
+}
+
+.token.macro.property,
+.HyperMD-codeblock .cm-variable {
+    color: rgb(21, 101, 202) !important;
+}
+
+.HyperMD-codeblock .cm-def,
+.token.function {
+    color: rgb(57, 73, 178) !important;
+    font-style: italic !important;
+}
+
+.token.macro.property {
+    color: rgb(245, 127, 23) !important;
+}
+
+.HyperMD-codeblock .cm-variable-2,
+.HyperMD-codeblock .cm-variable-3 {
+    color: #e35649 !important;
+}
+
+.HyperMD-codeblock .cm-type,
+.token.regex,
+.token.important,
+.token.variable {
+    color: rgb(0, 137, 123) !important;
+    font-style: italic !important;
+}

@@ -1,18 +1,41 @@
+/* 代码字体 */
 @font-face {
     font-family: "c-font";
-    src: url(https://vip.123pan.cn/1816033108/cdn/MapleMono.woff2);
+    src: url(https://vip.123pan.cn/1816033108/cdn/MapleMono.woff2) format(woff2);
+    font-display: swap;
     font-style: normal;
 }
 
 @font-face {
     font-family: "c-font";
-    src: url(https://vip.123pan.cn/1816033108/cdn/MapleMonoItalic.woff2);
+    src: url(https://vip.123pan.cn/1816033108/cdn/MapleMonoItalic.woff2) format(woff2);
+    font-display: swap;
     font-style: italic;
 }
 
+/* 正文字体 - 中文常规体 */
 @font-face {
     font-family: "p-font";
-    src: url(https://vip.123pan.cn/1816033108/cdn/PingFangSC.woff2);
+    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/HYZhengYuan-55W.woff2) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 正文字体 - 中文加粗体 */
+@font-face {
+    font-family: "p-font";
+    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/HYZhengYuan-75S.woff2) format(woff2);
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* 抗锯齿处理 */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body,
@@ -27,6 +50,7 @@ h5,
 h6,
 a {
     font-family: "p-font", "PingFang SC", sans-serif !important;
+    font-weight: 400;
 }
 
 h1,
@@ -39,9 +63,10 @@ h6 {
 }
 
 code {
-    font-family: "c-font", "p-font", "PingFang SC", sans-serif !important;
+    font-family: "c-font", "PingFang SC", monospace !important;
     color: var(--color-blue) !important;
 }
+
 
 .math {
     font-size: 110%;
