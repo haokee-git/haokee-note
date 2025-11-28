@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "歌词/鱼姐春情.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "题目标签"
+              "title": "鱼姐春情"
+            }
+          },
+          {
+            "id": "ee0eda5bc117a41f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "歌词/鱼姐春情.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "鱼姐春情"
             }
           }
         ]
@@ -94,13 +108,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "题目/题目标签.md",
+                "file": "歌词/鱼姐春情.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "题目标签 的大纲"
+              "title": "鱼姐春情 的大纲"
             }
           },
           {
@@ -210,10 +224,18 @@
       "webpage-html-export:导出为HTML": false
     }
   },
-  "active": "2ab81329827d4873",
+  "active": "b8a8b4fc10ed7f07",
   "lastOpenFiles": [
-    "publish.css",
+    "file/鱼姐春情.mp3",
+    "歌词/纯爱战士祝睿融.md",
+    "file/纯爱战士祝睿融.mp3",
+    "歌词/鱼姐春情.md",
+    "歌词/Cute Zhuruirong.md",
+    "file/Cute Zhuruirong.mp3",
+    "比赛记录/2025 十一月/2025.11.27 模拟赛.md",
+    "歌词",
     "题目/题目标签.md",
+    "publish.css",
     "比赛记录/2025 十一月/2025.11.26 模拟赛.md",
     "比赛记录/2025 十一月/2025.11.18 模拟赛.md",
     "杂项/剪切板.md",
@@ -237,10 +259,6 @@
     "题目/原神系列/往生堂.md",
     "题目/原神系列/挑选原石.md",
     "题目/原神系列/派蒙分饼.md",
-    "题目/原神系列/冒险等阶.md",
-    "题目/原神系列/可莉炸鱼.md",
-    "题目/其他/简单质数问题.md",
-    "题目/其他/二维 ST 表.md",
     "cmake",
     "未命名.canvas",
     "Excalidraw",
@@ -250,9 +268,6 @@
     "publish_tmp.css",
     "file/幂次法则：C.png",
     "file/{66895574-0511-4839-8735-C5FC9497C55E}.png",
-    "publish.js",
-    "比赛记录/2025 七月",
-    "比赛记录/2025 九月",
     "file/Pasted image 20250313170756.png",
     "file/Pasted image 20250313170715.png",
     "file/Pasted image 20250313170526.png",
