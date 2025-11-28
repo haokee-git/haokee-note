@@ -16,16 +16,15 @@
 /* 正文字体 - 中文常规体 */
 @font-face {
     font-family: "p-font";
-    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/HYZhengYuan-55W.woff2) format(woff2);
+    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCRegular.otf) format(otf);
     font-display: swap;
-    font-weight: 400;
     font-style: normal;
 }
 
 /* 正文字体 - 中文加粗体 */
 @font-face {
     font-family: "p-font";
-    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/HYZhengYuan-75S.woff2) format(woff2);
+    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCMedium.otf) format(otf);
     font-display: swap;
     font-weight: bold;
     font-style: normal;
