@@ -16,7 +16,7 @@
 /* 正文字体 - 中文常规体 */
 @font-face {
     font-family: "p-font";
-    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCRegular.otf) format(otf);
+    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCRegular.otf) format(opentype);
     font-display: swap;
     font-style: normal;
 }
@@ -24,7 +24,7 @@
 /* 正文字体 - 中文加粗体 */
 @font-face {
     font-family: "p-font";
-    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCMedium.otf) format(otf);
+    src: url(https://1816033108.v.123pan.cn/1816033108/cdn/PingFangSCMedium.otf) format(opentype);
     font-display: swap;
     font-weight: bold;
     font-style: normal;
@@ -10895,6 +10895,7 @@ body:not(.is-mobile):not(.mod-macos):not(.mod-windows):not(.mod-linux) .app-cont
     font-style: italic !important;
 }
 
+/* 内容区背景：轻微纹理 + 渐变 */
 .publish-renderer {
     padding-top: 1rem !important;
     padding-bottom: 3rem !important;
@@ -10906,12 +10907,14 @@ body:not(.is-mobile):not(.mod-macos):not(.mod-windows):not(.mod-linux) .app-cont
         radial-gradient(circle at 50% 50%, rgba(220, 235, 255, 0.15), transparent 50%) !important;
 }
 
+/* 头部保持透明，不叠加颜色 */
 .publish-header {
     padding-top: 1.5rem !important;
     padding-bottom: 1rem !important;
     background: none !important;
 }
 
+/* 正文卡片：玻璃拟态 */
 .publish .markdown-preview-view.markdown-rendered {
     background-color: rgba(255, 255, 255, 0.96) !important;
     backdrop-filter: blur(8px) !important;
@@ -10925,66 +10928,46 @@ body:not(.is-mobile):not(.mod-macos):not(.mod-windows):not(.mod-linux) .app-cont
     transition: all 0.3s ease-in-out;
 }
 
+/* 左侧栏 & 右侧抽屉：去掉自己的 backdrop-filter，只做半透明背景 */
 .publish .site-body-left-column,
 .publish .workspace-drawer.mod-right {
-    background-color: rgba(248, 250, 253, 0.85) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    background-color: rgba(248, 250, 253, 0.9) !important;
     box-shadow: none !important;
     border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
     border-right: none !important;
     border-left: none !important;
 }
 
-.publish .site-body-left-column * {
-    background-color: transparent !important;
-}
-
+/* 左侧栏背景图 */
 .site-body-left-column {
-    /* 您原有的背景图片 */
-    background-image: url(https://publish-01.obsidian.md/access/7f880cb309be73ccd2d97c2223b38e09/file/background-image.png) !important;
-
-    /* 为了让伪元素能正确定位，父元素需要设置 position */
     position: relative;
-
-    /* 确保背景图完整显示，可根据需要调整 */
+    overflow: hidden;
+    background-image: url(https://publish-01.obsidian.md/access/7f880cb309be73ccd2d97c2223b38e09/file/background-image.png) !important;
     background-size: cover;
     background-position: center;
-
-    /* （可选）防止模糊的边缘溢出容器 */
-    overflow: hidden;
 }
 
-/* 创建一个覆盖在背景图上方的伪元素层 */
+/* 半透明白色遮罩：不再使用 backdrop-filter，只用纯色透明度，避免边缘虚影 */
 .site-body-left-column::before {
     content: '';
     position: absolute;
-
-    /* * 关键修改：
-   * 让这个伪元素向四周都延伸 10px，使其比父容器更大。
-   * 这样模糊产生的深色边缘就会被推到容器的外部。
-   * 父容器设置的 overflow: hidden 会把这部分裁切掉。
-  */
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-
-    /* 之前的蒙版和模糊效果保持不变 */
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    inset: 0; /* 等价于 top:0;right:0;bottom:0;left:0; */
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-/* * 确保 .site-body-left-column 内部的实际内容（如文字、按钮等）
- * 显示在蒙版之上，而不是被蒙版遮盖。
-*/
-.site-body-left-column>* {
+/* 确保内容浮在遮罩之上 */
+.site-body-left-column > * {
     position: relative;
     z-index: 1;
 }
 
+/* 内部元素背景透明 */
+.site-body-left-column * {
+    background-color: transparent !important;
+}
+
+/* 引用样式 */
 blockquote {
     border-left: 3px solid rgba(135, 206, 250, 0.9) !important;
     background-color: rgba(235, 245, 255, 0.6) !important;
@@ -10993,22 +10976,9 @@ blockquote {
     border-radius: 0 8px 8px 0 !important;
 }
 
-/* --- 第三步：最终方案 --- */
-/* 在半透明的基础上，重新加入高斯模糊和其他细节 */
+/* 去掉多余的重复规则：不要再额外写一遍 .site-body-left-column, .workspace-drawer.mod-right {... backdrop-filter: ... } */
 
-.site-body-left-column,
-.publish .workspace-drawer.mod-right {
-    background-color: rgba(248, 250, 255, 0.9) !important;
-    backdrop-filter: blur(16px) !important;
-    -webkit-backdrop-filter: blur(16px) !important;
-    box-shadow: none !important;
-}
-
-/* 再次确保内部元素背景透明，以防万一 */
-.site-body-left-column * {
-    background-color: transparent !important;
-}
-
+/* 左侧边框宽度设为 0 */
 .published-container {
     --sidebar-left-border-width: 0 !important;
 }
