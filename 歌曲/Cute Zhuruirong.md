@@ -1,5 +1,7 @@
 #蓝调 #Soul #抒情 #流行 
 
+![[Cute Zhuruirong.jpg]]
+
 ![[Cute Zhuruirong.mp3]]
 
 Cute Zhuruirong~

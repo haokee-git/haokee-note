@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "55bdff97bdefcf30",
+        "id": "2e3af034852b95e7",
         "type": "tabs",
         "children": [
           {
-            "id": "c6b29bad6aef5dbd",
+            "id": "54797d5604939de5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "歌曲/好鱼鱼是基佬.md",
+                "file": "歌曲/机房一霸 CCH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "好鱼鱼是基佬"
+              "title": "机房一霸 CCH"
+            }
+          },
+          {
+            "id": "9455f5a45e0aa126",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "歌曲/纯爱战士祝睿融.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "纯爱战士祝睿融"
             }
           }
         ]
@@ -94,13 +108,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "歌曲/好鱼鱼是基佬.md",
+                "file": "歌曲/机房一霸 CCH.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "好鱼鱼是基佬 的大纲"
+              "title": "机房一霸 CCH 的大纲"
             }
           },
           {
@@ -210,27 +224,37 @@
       "webpage-html-export:导出为HTML": false
     }
   },
-  "active": "c6b29bad6aef5dbd",
+  "active": "54797d5604939de5",
   "lastOpenFiles": [
-    "歌曲/鱼鸡爱情故事.md",
+    "file/Pasted image 20251216152035.png",
+    "歌曲/机房一霸 CCH.md",
+    "file/Pasted image 20251216151927.png",
+    "歌曲/纯爱战士祝睿融.md",
+    "file/机房一霸 CCH.mp3",
+    "歌曲/Cute Zhuruirong.md",
     "歌曲/鱼姐春情.md",
+    "歌曲/鱼鸡爱情故事.md",
     "歌曲/好鱼鱼是基佬.md",
-    "file/好鱼鱼是基佬.mp3",
+    "歌曲/好渴鹅是世界上最帅的鹅.md",
+    "file/Cute Zhuruirong.jpg",
+    "file/鱼姐春情.jpg",
+    "file/鱼鸡爱情故事.jpg",
+    "file/好渴鹅是世界上最帅的鹅.jpg",
+    "file/纯爱战士祝睿融.jpg",
+    "file/好鱼鱼是基佬.jpg",
     "未命名.md",
+    "file/好鱼鱼是基佬.mp3",
     "常用公式证明/幂次法则.md",
     "publish.css",
     "题目/题目标签.md",
     "file/鱼鸡爱情故事.mp3",
-    "歌曲/好渴鹅是世界上最帅的鹅.md",
     "file/好渴鹅是世界上最帅的鹅.mp3",
     "比赛记录/2025 十一月/2025.11.27 模拟赛.md",
     "比赛记录/2025 十一月/2025.11.25 模拟赛.md",
     "比赛记录/2025 八月/2025.8.4 模拟赛.md",
     "主页.md",
     "file/鱼姐春情.mp3",
-    "歌曲/纯爱战士祝睿融.md",
     "file/纯爱战士祝睿融.mp3",
-    "歌曲/Cute Zhuruirong.md",
     "file/Cute Zhuruirong.mp3",
     "歌曲",
     "比赛记录/2025 十一月/2025.11.18 模拟赛.md",
@@ -247,17 +271,7 @@
     "比赛记录/未命名.md",
     "渴鹅新闻/2024 十一月/2024.11.11 星期一 - 2024.11.17 星期日.md",
     "渴鹅新闻/2024 十一月/2024.11.4 星期一 - 2024.11.10 星期日.md",
-    "渴鹅新闻/2024 十一月/2024.10.28 星期五 - 2024.11.2 星期六.md",
-    "cmake",
     "未命名.canvas",
-    "file/Checkboxes.png",
-    "file/幂次法则：C.png",
-    "file/{66895574-0511-4839-8735-C5FC9497C55E}.png",
-    "file/Pasted image 20250313170756.png",
-    "file/Pasted image 20250313170715.png",
-    "file/Pasted image 20250313170526.png",
-    "file/Pasted image 20250313170337.png",
-    "file/Pasted image 20250313170253.png",
     "fdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsa.canvas"
   ]
 }
