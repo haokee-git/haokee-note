@@ -32,7 +32,7 @@ $$
 因此，决策点 $i$ 总是单调递增。考虑决策单调性分治。以求 $f_k$ 为例：
 
 - 令 $\text{solve}(l,r,s,t)$ 为求 $k\in[l,r]$ 的 $f_k$，其中最优决策点 $i\in[s,t]$。
-- 为 $f_m$ $\left(m=\left\lfloor\cfrac{l+r}{2}\right\rfloor\right)$ 暴力在 $[s,t]$ 中找出最优的 $i$。注意 $i$ 不能大于 $m$（由。
+- 为 $f_m$ $\left(m=\left\lfloor\cfrac{l+r}{2}\right\rfloor\right)$ 暴力在 $[s,t]$ 中找出最优的 $i$。注意 $i$ 不能大于 $m$（由定义）。
 - 左边的 $[l,m)$ 最优决策点位置一定小于等于 $i$，右侧的一定大于等于 $i$。
 - 递归计算 $\text{solve}(l,m,s,i)$ 和 $\text{solve}(m+1,r,i,t)$。
 
