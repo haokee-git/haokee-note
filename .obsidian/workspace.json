@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "杂项/如何选择适合自己的 AI.md",
+                "file": "干货长文/如何选择适合自己的 AI.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "杂项/如何选择适合自己的 AI.md",
+                "file": "干货长文/如何选择适合自己的 AI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,11 +169,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 363.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:新建数据库": false,
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -196,8 +196,9 @@
   },
   "active": "90cce2d578e1feb1",
   "lastOpenFiles": [
+    "干货长文/如何选择适合自己的 AI.md",
+    "干货长文",
     "杂项/剪切板.md",
-    "杂项/如何选择适合自己的 AI.md",
     "杂项/我的回忆录.md",
     "主页.md",
     "icon.png",
@@ -234,7 +235,6 @@
     "比赛记录/2025 八月/2025.8.4 模拟赛.md",
     "file/鱼姐春情.mp3",
     "file/纯爱战士祝睿融.mp3",
-    "file/Cute Zhuruirong.mp3",
     "比赛记录/2025 十一月/2025.11.18 模拟赛.md",
     "比赛记录/2025 十一月/2025.11.15 模拟赛.md",
     "比赛记录/2025 十月/2025.10.30 模拟赛.md",
