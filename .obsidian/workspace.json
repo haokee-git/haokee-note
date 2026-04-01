@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "550f976d8c1e5862",
+        "id": "04a2b2ca6f8798e8",
         "type": "tabs",
         "children": [
           {
-            "id": "5ded12d81cfdd0db",
+            "id": "90cce2d578e1feb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "歌曲/信息组是集班最菜的组.md",
+                "file": "杂项/如何选择适合自己的 AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "信息组是集班最菜的组"
-            }
-          },
-          {
-            "id": "1b2297d0a65d3245",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "歌曲/鱼鸡爱情故事.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "鱼鸡爱情故事"
+              "title": "如何选择适合自己的 AI"
             }
           }
         ]
@@ -108,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "歌曲/信息组是集班最菜的组.md",
+                "file": "杂项/如何选择适合自己的 AI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "信息组是集班最菜的组 的大纲"
+              "title": "如何选择适合自己的 AI 的大纲"
             }
           },
           {
@@ -180,22 +166,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "f3f23920b1765635",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dbf46c5f6a17d227",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -203,6 +173,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -215,7 +186,6 @@
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
       "publish:发布更改": false,
-      "bases:创建新数据库": false,
       "pkmer:Open Pkmer Market": false,
       "obsidian-projects:打开项目": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
@@ -224,10 +194,13 @@
       "webpage-html-export:导出为HTML": false
     }
   },
-  "active": "5ded12d81cfdd0db",
+  "active": "90cce2d578e1feb1",
   "lastOpenFiles": [
-    "主页.md",
+    "杂项/剪切板.md",
+    "杂项/如何选择适合自己的 AI.md",
     "杂项/我的回忆录.md",
+    "主页.md",
+    "icon.png",
     "歌曲/信息组是集班最菜的组.md",
     "file/信息组是集班最菜的组.mp3",
     "歌曲/鱼鸡爱情故事.md",
@@ -238,7 +211,6 @@
     "file/Pasted image 20251220170219.png",
     "file/好鱼鱼疑似南梁.mp3",
     "歌曲/纯爱战士祝睿融.md",
-    "杂项/剪切板.md",
     "歌曲/鱼姐春情.md",
     "歌曲/Cute Zhuruirong.md",
     "歌曲/好渴鹅是世界上最帅的鹅.md",
@@ -250,7 +222,6 @@
     "file/鱼鸡爱情故事.jpg",
     "file/好渴鹅是世界上最帅的鹅.jpg",
     "file/纯爱战士祝睿融.jpg",
-    "file/好鱼鱼是基佬.jpg",
     "未命名.md",
     "file/好鱼鱼是基佬.mp3",
     "常用公式证明/幂次法则.md",
@@ -270,8 +241,6 @@
     "游记/CSP2025 游记.md",
     "游记/CSP2023 游记.md",
     "游记/CSP2024 游记.md",
-    "比赛记录/2025 十一月/2025.11.13 模拟赛.md",
-    "比赛记录/未命名.md",
     "未命名.canvas",
     "fdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsafdsa.canvas"
   ]

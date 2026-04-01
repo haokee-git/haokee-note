@@ -1,9 +1,9 @@
 {
   "nativeMenus": false,
-  "textFontFamily": "苹方-简,PingFang SC,微软雅黑,Inter",
-  "monospaceFontFamily": "Maple Mono,JetBrains Mono,Consolas,Source Code Pro,Monaco,Courier New",
+  "textFontFamily": "Noto Serif CJK SC,苹方-简,PingFang SC,微软雅黑,Inter",
+  "monospaceFontFamily": "Maple Mono NF CN,Maple Mono,JetBrains Mono,Consolas,Source Code Pro,Monaco,Courier New",
   "interfaceFontFamily": "苹方-简,PingFang SC,微软雅黑,Inter",
-  "cssTheme": "Border",
+  "cssTheme": "Claude with Haokee Theme",
   "baseFontSize": 16,
   "theme": "system",
   "accentColor": "",
